@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font: 400 15px 'Plus Jakarta Sans', sans-serif;;
+  line-height: 25px;
+}
+
+.container {
+  width: auto;
+  margin: auto;
+  padding: 0 45px;
+}
+
+.mobile-menu-button {
+  display: none;
+  color: #fff;
+  transition: 0.70s;
+}
+
+.mobile-menu-button:hover {
+  transition: 0.70s;
+  transform: rotate(180deg);
+}
+
+.navbar-brand {
+  height: 25px;
+  transition: ease-in 0.5s;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.3rem;;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.5);
+}
+
+.menu {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  height: 3rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  word-spacing: 0.5rem;
+  transition: 1.5s;
+  justify-content: center;
+}
+
+.menu li a:hover {
+  color:#000;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.menu .nav-active {
+  color: #000;
+  text-decoration: underline 1px;
+  text-underline-offset: 0.3em;
+}
+
+.envelope {
+  width: auto;
+  height: 650px;
+  background: linear-gradient(to bottom, #88b8a9,
+rgba(68, 92, 84, 0.5)), url(../assets/index/1.jpg) center/cover fixed no-repeat;
+  clip-path:polygon(50% 100%, 100% 90%, 100% 0%, 0% 0%, 0 90%);
+}
+
+header {
+  background-size: 100%;
+  margin-bottom: 40px;
+}
+
+header .container {
+  color: #fff;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+header .intro {
+  position: relative;
+  text-align: left;
+}
+
+header .intro h1 {
+  font-size: 80px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+header .intro h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.check {
+  display: flex;
+  height: 50px;
+  margin-bottom: 350px;
+  padding: 15px;
+  background:#fff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.check a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.check a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.check:hover a {
+  padding-right: 25px;
+}
+
+.check:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.posts a {
+  width: 100%;
+  text-decoration: none;
+}
+.posts a:hover {
+  text-decoration: none;
+}
+
+.card {
+  transition: all .3s;
+  box-shadow: 0 15px 31px rgba(0, 0, 0, .09);
+  background: #88b8a9;
+  width: 100%;
+}
+
+.card:hover {
+  opacity: 0.9;
+}
+
+.card .img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.card .img:hover {
+  opacity: 0.9;
+}
+
+.card .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  filter: grayscale(100%);
+}
+
+.card .info {
+  padding: 20px 40px 40px 20px;
+
+}
+
+.card .info .date {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.card .info h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section h2 {
+  text-align:left;
+  margin-bottom: 60px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-underline-offset: 0.3em;
+  word-spacing: 0.5rem;
+}
+
+.section h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 35px;
+}
+
+.footer {
+  color: #88b8a9;
+  opacity: .7;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  padding-bottom: 3rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .container {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      gap: 10px !important;
+  }
+
+  .mobile-menu-button {
+      display: block;
+      position: absolute;
+      right: 2.5rem;
+      top: 2.3rem;
+      background: none;
+      border: none;
+      font-size: 24px;
+      z-index: 100;
+      cursor: pointer;
+  }
+
+  .menu  {
+      background: #88b8a9;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .14);
+      display: none;
+      align-items: center;
+      align-self: center;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+  }
+
+  .menu.show {
+      display: flex;
+      text-align: center;
+      height: 50rem;
+      margin-top: -6rem;
+  }
+
+  .menu .nav-active {
+      color: #fff;
+      text-decoration: underline 1px;
+      text-underline-offset: 0.3em;
+  }
+
+  .menu li a:hover{
+      background: transparent;
+  }
+
+  .menu ul {
+      margin-top: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .menu ul li a {
+      color: #000;
+      font-size: 22px;
+      margin-top: 10px;
+      opacity: 1;
+  }
+
+  header .intro h1 {
+      font-size: 40px;
+      text-align: center;
+  }
+
+  header .intro h1:after {
+      content: '';
+      width: 0;
+      height: 0;
+      animation: none;
+  }
+  
+  header .intro h2 {
+      font-size: 18px;
+      text-align: center;
+  }
+
+  .check {
+      top: 17rem;
+      position: absolute;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); 
+  }
+
+  .check a {
+      font-size: 10.4px;
+  }
+
+  .posts {
+      flex-direction: column;
+  }
+
+  .section h2 {
+      font-size: 21px;
+      text-align: center;
+  }
+
+  .footer {
+      font-size: 10px;
+  }
+}
+
+/* Extra large devices (large laptops/desktops, >= 1200px)  */ 
+@media only screen and (min-width: 1200px) {
+   
+}
