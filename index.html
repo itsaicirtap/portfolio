@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home • Patrícia Marques</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <header class="envelope" id="header">
+
+
+        <div class="nav-container">
+            <a href="#header"><img class="navbar-brand" src="assets/logo.png" alt="logo"></a>
+
+            <nav id="mbmenu" class="nav">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <button class="mobile-menu-button" title="Mobile menu">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+
+        <div class="container">
+            <div class="intro" data-aos="zoom-in">
+                <h1>Hi there! I'm Patrícia Marques, <br>and this is my portfolio.</h1>
+                <h2>Scroll to explore.</h2>
+            </div>
+            <div class="scroll">
+                <a href="#recent"><i class="button fa-solid fa-angles-down"></i></a>
+            </div>
+        </div>
+        <div class="wave">
+            <img class="waves" src="assets/wave.svg">
+        </div>
+    </header>
+
+    <div class="containerx" id="recent">
+        <h1 data-aos="fade-right">Recent Work</h1>
+        <div class="card" data-aos="fade-right">
+            <div class="card-image">
+                <img src="assets/teste.png" alt="pic">
+            </div>
+
+            <div class="card-content">
+                <h2 class="blog-title">Sinta Saúde</h2>
+                <p class="excerpt">Designing a mobile app for a local doctor's office.</p>
+                <a href="sintasaude.html" class="buttonx">Read more</a>
+            </div>
+        </div>
+        <div class="card" data-aos="fade-right">
+            <div class="card-image">
+                <img src="assets/teste.png" alt="pic">
+            </div>
+
+            <div class="card-content">
+                <h2 class="blog-title">Padotar</h2>
+                <p class="excerpt">Helping people find the perfect pet and related educational and informative content.
+                </p>
+                <a href="padotar.html" class="buttonx">Read more</a>
+            </div>
+        </div>
+        <div class="card" data-aos="fade-right">
+            <div class="card-image">
+                <img src="assets/teste2.png" alt="pic">
+            </div>
+
+            <div class="card-content">
+                <h2 class="blog-title">Inclue</h2>
+                <p class="excerpt">What is it like to live with a disability that makes it difficult to access digital
+                    content?</p>
+                <a href="inclue.html" class="buttonx">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const mobileMenu = document.querySelector('button.mobile-menu-button');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
