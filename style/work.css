@@ -25,7 +25,6 @@ body {
   font: 15px "Montserrat", sans-serif;
   line-height: 25px;
   background-color: #fafafa;
-  overflow-x: hidden;
 }
 
 .mobile-menu-button {
@@ -197,6 +196,10 @@ body {
     z-index: 1;
     float: none;
     margin-top: 0;
+  }
+
+  .nav-container {
+    right: 0;
   }
 
   .nav.show {
