@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinta Saúde • Patrícia Marques</title>
+    <link rel="icon" type="image/x-icon" href="favicon1.ico">
+    <link rel="stylesheet" href="style/sintasaude.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+
+    <div class="popup" id="mobilePopup">
+      <div class="popup-content">
+        <p>For the best experience, visit me on a larger screen ✨</p>
+        <button id="continueButton" class="button">Continue on Mobile<i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img class="navbar-brand cursor" id="logo-light" src="assets/logo1.png" alt="logo">
+          <img class="navbar-brand cursor" style="display: none;" id="logo-dark" src="assets/logo.png" alt="logo">
+        </a>   
+        <nav id="mbmenu" class="nav">
+          <ul>
+            <li><a href="index.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Home<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="about.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>About<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/patpm" target="_blank"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Linkedin<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <button id="light-mode-toggle" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </ul>
+        </nav>
+      </div>
+      <button class="mobile-menu-button" title="Mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" class="myBtn active" title="Go to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <section class="hero">
+      <div data-aos="fade-right" class="cover">
+        <h2>Personal Project, UI/UX Design</h2>
+        <h1>Sinta Saúde</h1>
+        <p>7 min read</p>
+      </div>
+      <div data-aos="zoom-in" class="banner-img">
+        <img class="banner" src="assets/sintasaude/hero.png" alt="banner">
+      </div>
+    </section>
+
+    <section id="overview" class="container" data-aos="fade-right">
+      <div class="overview">        
+        <div class="info">
+          <div class="info-content">
+            <h2>Roles</h2>
+            <p>UX Researcher<br>UI/UX Designer</p>
+          </div>
+          <div class="info-content">
+            <h2>Tools</h2>
+            <p>Figma<br>Adobe Illustrator</p>
+          </div>
+          <div class="info-content">
+            <h2>Timeline</h2>
+            <p>Oct 2023<br>(4 weeks)</p>
+          </div>         
+        </div>
+        <div class="context">
+          <h2>Context</h2>
+          <p>
+            In an ever-evolving digital world, a health clinic's online presence is vital for connecting with patients in 
+            an effective and informative way.
+          </p>
+          <p>
+            This project came about when a friend of mine, who works at Sinta Saúde's clinic, asked me to help her develop 
+            a visual example of what their mobile app could look like. They wanted to expand their presence to mobile devices, 
+            creating an experience that would bring the richness of their website directly into the palm of their users hands.
+          </p>
+          <p>
+            Having received the main contents for the app, I took responsibility for the overall design process. However, this 
+            project didn't take off, as they soon gave up on the idea, but I still took the opportunity to develop my skills
+            and took it as far as I could.
+          </p>           
+          <div class="proto-button">
+            <a href="https://www.figma.com/proto/WcHu45j7WQZOUvV3h2nzos/Sinta-Sa%C3%BAde?node-id=1-3&t=U5tU1MmJGTn7SpHe-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
+              target="_blank" class="button" title="View prototype">View Prototype<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav1">
+      <div class="active-section"></div>
+      <button class="dropdown-button">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <ul class="nav-list">
+        <li><a href="#discover"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Discover</a></li>
+        <li><a href="#research"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Research</a></li>
+        <li><a href="#define"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Define & Ideate</a></li>
+        <li><a href="#prototyping"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Prototype</a></li>
+        <li><a href="#finaldesign"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Final Design</a></li>
+        <li><a href="#reflection"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Conclusion</a></li>
+      </ul>
+    </div>
+
+    <section id="discover" data-title="Discover" class="container">
+      <div data-aos="fade-right">    
+        <h2><span class="circle"></span>Discover</h2>
+        <div class="discover">
+          <div class="prob-sol">
+            <h1>The Challenge Was Clear 🤔</h1>
+            <p>
+              To faithfully replicate the website's content and aesthetics in a 
+              user-friendly and visually appealing mobile app, incorporating 
+              additional content.
+            </p>
+          </div>
+          <div class="prob-sol">
+            <h1>The Solution 💡</h1>
+            <p>
+              Preserving the existing design and content, thoroughly optimize each 
+              element to ensure a seamless mobile experience with quick and 
+              intuitive access to the clinic's essential information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" data-title="Research" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Research</h2>
+        <h1>The Backbone of the Project</h1>
+        <p>
+          As we're replicating the existing web page for mobile, we prioritized 
+          analyzing the website's content structure, information types, and 
+          multimedia elements. This analysis will give us a clear understanding 
+          of how the content is organized and presented to users, guiding us 
+          in determining which elements are essential for the mobile app.
+        </p>
+        <p>
+          To ensure the design aligns with the established brand identity and 
+          maintains visual consistency, we'll use the same design guidelines, 
+          including colors, typography, imagery and speech.
+        </p>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Exploring Existing Solutions in the Market</h1>
+        <p>
+          The healthcare app landscape is brimming with tools to manage your 
+          well-being. Upon reviewing some popular apps in the field, we found that they 
+          offer a similar range of functionalities.
+        </p> 
+        <p>
+          However, in addition to these 
+          basic functionalities, the apps also share common visual elements, 
+          such as a clean and modern design, effective use of negative space, 
+          consistent branding reflected in their color palette (often featuring 
+          calming blues and greens to promote feelings of well-being), and intuitive navigation.
+        </p>
+        <div class="tab-examples" data-aos="zoom-in">
+          <button class="tablink active" onclick="openApp('Luz', this)" id="defaultOpen">App 1</button>
+          <button class="tablink tab-gap" onclick="openApp('Cuf', this)">App 2</button>
+          <button class="tablink tab-gap1" onclick="openApp('Doc', this)">App 3</button>
+          <button class="tablink" onclick="openApp('SNS', this)">App 4</button>            
+          <div id="Luz" class="tabcontent">
+            <div class="example-name">
+              <img id="myImg" class="example-img" src="assets/sintasaude/myluz.png" alt="My Luz">
+              <div class="example-title">
+                <h1>My Luz</h1>
+                <h2>Features</h2>
+              </div>
+            </div>
+            <ul>
+              <li>Access medical history and electronic prescriptions;</li>
+              <li>Appointment scheduling and management;</li>
+              <li>Contact information and support;</li>
+              <li>Data synchronization with Google Fit (Android) and Apple Health (iOS);</li>
+              <li>Make online payments and view settled invoices;</li>
+              <li>Manage the personal areas of other family members;</li>
+              <li>Symptom checker and health articles;</li>
+              <li>View exams and tests results;</li>
+              <li>Virtual consultation;</li>
+              <li>Wainting time and online check-in.</li>
+            </ul>
+          </div>         
+          <div id="Cuf" class="tabcontent">
+            <div class="example-name">
+              <img id="myImg" class="example-img" src="assets/sintasaude/cuf.png" alt="My Cuf">
+              <div class="example-title">
+                <h1>My Cuf</h1>
+                <h2>Features</h2>
+              </div>
+            </div>
+            <ul>
+              <li>Access medical history and electronic prescriptions;</li>
+              <li>Appointment scheduling and management;</li>
+              <li>Contact information and support;</li>
+              <li>Data synchronization with Google Fit (Android) and Apple Health (iOS);</li>
+              <li>Make online payments and view settled invoices;</li>
+              <li>Manage the personal areas of other family members;</li>
+              <li>Symptom checker and health articles;</li>
+              <li>Teleconsultation;</li>
+              <li>View exams and tests results;</li>
+              <li>Wainting time and online check-in.</li>
+            </ul>
+          </div>         
+          <div id="Doc" class="tabcontent">
+            <div class="example-name">
+              <img id="myImg" class="example-img" src="assets/sintasaude/doctoralia.png" alt="Doctoralia">
+              <div class="example-title">
+                <h1>Doctoralia</h1>
+                <h2>Features</h2>
+              </div>
+            </div>
+            <ul>
+              <li>Access medical history;</li>
+              <li>Appointment scheduling and management;</li>
+              <li>Book appointments with providers from different clinics and hospitals;</li>
+              <li>Find a specialist nearby;</li>
+              <li>Online chat directly with the doctor;</li>
+              <li>Other patients' reviews of doctors;</li>
+              <li>Videoconsultation.</li>
+            </ul>
+          </div>         
+          <div id="SNS" class="tabcontent">
+            <div class="example-name">
+              <img id="myImg" class="example-img" src="assets/sintasaude/sns.jpg" alt="SNS 24">
+              <div class="example-title">
+                <h1>SNS 24</h1>
+                <h2>Features</h2>
+              </div>
+            </div>
+            <ul>
+              <li>Access medical history and electronic prescriptions;</li>
+              <li>Contact information and support;</li>
+              <li>Recording measurements (glycemia, blood pressure, BMI);</li>
+              <li>Symptom checker integrated with national health system;</li>
+              <li>Teleconsultation;</li>
+              <li>Vaccine card.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Gathering My Insights</h1>
+        <p>
+          Based on research into user preferences and industry best practices,
+          this app has been crafted to align with the needs and expectations
+          of healthcare consumers. Here are key insights that have informed
+          the design of this app:
+        </p>
+        <div class="insights">
+          <div class="eliminated">
+            <button class="accordion">Information Prioritization<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Certain information sections, such as contact details, services, and appointment booking, are highly prioritized 
+                by users, indicating their essential nature for the mobile app.
+              </p>
+            </div>
+            <button class="accordion">Quick Access<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Users prefer quick access to vital information without extensive scrolling, indicating a need for concise and 
+                organized content presentation.</p>
+            </div>
+            <button class="accordion">Content Condensation<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                The website contains extensive textual content that needs to be condensed for mobile screens, requiring careful 
+                selection of key messages and concise wording.
+              </p>
+            </div>
+            <button class="accordion">Visual Elements<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                High-quality images and multimedia elements enhance user engagement.
+              </p>
+            </div>
+          </div>
+          <div class="chosen">
+            <button class="accordion">Intuitive Navigation<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Users expect intuitive navigation patterns similar to standard mobile apps, emphasizing the need for a clear and 
+                straightforward menu structure.
+              </p>
+            </div>
+            <button class="accordion">Consistent Branding<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Consistency in branding elements, such as color schemes and typography, is essential for brand recognition and 
+                user trust.
+              </p>
+            </div>
+            <button class="accordion">Innovative Features<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Exploration of innovative features in competitor apps, such as integrated chat support or appointment scheduling, 
+                can inspire unique functionalities for the mobile app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text sara" data-aos="fade-right">
+        <h1>Meet Sara, Our Ideal User</h1>
+        <p>
+          Keep in mind: although this persona is based on
+          research and general user behavior patterns, it's crucial to remember 
+          it provides a foundational understanding to guide design decisions.
+        </p>
+        <div class="persona-card">           
+          <img class="persona" src="assets/sintasaude/persona.png" alt="persona">
+          <h1>Sara Costa</h1>
+          <h2>34 • Office worker</h2>
+          <p>
+            Her main goal is to seek effective relief and ongoing control for her chronic back pain and joint stiffness, caused by her sedentary work.
+            She needs <strong>flexible solutions</strong> that fit her busy schedule, <strong>clear explanations</strong> in 
+            simple, jargon-free language, and <strong>trustworthy professionals</strong> in a welcoming environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="define" data-title="Define & Ideate" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Define & Ideate</h2>
+        <h1>Aligning Features With Business Objectives</h1>
+        <p>
+          Quality prevailed over quantity as we chose to refine essential
+          functionalities, ensuring each feature meets the highest standards
+          of our users. Appointment Scheduling and Online Consultation were immediately crossed off the list as
+          they were not the clinic's priority and given that they still offer
+          these services through third-party apps.
+        </p>
+        <div class="features">
+          <div class="eliminated">            
+            <button class="accordion">Specialties<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Show all available specialties with detailed information. Clicking the appointment button conveniently opens a 
+                WhatsApp chat for real-time communication with the clinic.
+              </p>
+            </div>
+            <button class="accordion">Explore<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Users can explore some pathologies, their causes and treatments.                
+              </p>
+            </div>
+            <button class="accordion">Staff Board<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Introducing a staff board ensures transparent communication, fosters trust, and enhances patient-staff interactions.
+              </p>
+            </div>
+          </div>
+          <div class="chosen">
+            <button class="accordion">Highlights<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Activities provided by the clinic, such as workshops, will appear prominently on the home page.
+              </p>
+            </div>
+            <button class="accordion">FAQ<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                The most frequently asked questions will be available for any user to have access to.
+              </p>
+            </div>         
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Navigating Through the App</h1>
+        <p>
+          Keeping key features in mind, I created this user flow that explores the journey of a 
+          potential patient seeking information and scheduling an appointment.
+        </p>
+        <div class="img-container sitemap" data-aos="zoom-in">
+          <img id="flow-light" src="assets/sintasaude/flow1.png" alt="flow">
+          <img style="display: none;" id="flow-dark" src="assets/sintasaude/flow.png" alt="flow">
+        </div>
+      </div>
+    </section>
+
+    <section id="prototyping" data-title="Prototype" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Prototype</h2>
+        <h1>Designing for Consistency</h1>
+        <p>
+          Within the spectrum of colors already used in website elements, one of the main 
+          shades was selected to adapt to the app's design. This deliberate choice is deeply 
+          rooted in the pursuit of enhanced brand recognition and a seamless user experience. 
+        </p>
+        <p>
+          Furthermore, the font mirrors the one used on the website, ensuring a cohesive 
+          and harmonious visual language. This consistency extends to the overall user 
+          experience, as users will encounter the same familiar typeface across both platforms, 
+          fostering a sense of ease and comfort while navigating the app.
+        </p>
+        <p>
+          Please note that the visual elements of the app may not perfectly mirror the current site design as updates may occur.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="style-light" src="assets/sintasaude/styleguide1.png" alt="style guide">
+          <img style="display: none;" id="style-dark" src="assets/sintasaude/styleguide.png" alt="style guide">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Visualizing Concepts</h1>
+        <p>
+          I started with some low-fidelity sketches of the main pages, 
+          using basic shapes and few details, focusing on layout and 
+          user flow.
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="lofi" src="assets/sintasaude/sketches.jpg" alt="sketches">
+        </div>
+      </div>
+    
+      <div class="text" data-aos="fade-right">
+        <h1>Wireframes</h1>
+        <p>
+          I moved onto my mid-fidelity prototype, made in Figma, which 
+          brings more structure and clarity to the app.
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="wireframes" src="assets/sintasaude/wireframes.png" alt="wireframes">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Hi-fi Interactive Prototype</h1>
+        <p>
+          Unfortunately, I received the news that they were abandoning the project. Consequently, 
+          we pivoted the prototype's focus to showcasing a few key user flows within the app. This 
+          meant creating just one example of each feature to facilitate usability testing.
+        </p>
+        <p>
+          However, in the meantime the remaining pages of the app have been developed, and below is the 
+          fully finished prototype, already with the changes suggested by participants (for more 
+          details see the "Priority Revisions" section).
+        </p>
+        <iframe class="figma" id="figma-light" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWcHu45j7WQZOUvV3h2nzos%2FSinta-Sa%25C3%25BAde%3Fnode-id%3D1-3%26t%3Dpyvubep4xfIfxVDJ-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3" allowfullscreen></iframe>
+        <iframe class="figma" style="display: none;" id="figma-dark" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FctpSdQWw4MNrNMNcLfvqY6%2FSinta-Sa%25C3%25BAde-App%3Fnode-id%3D1-3%26t%3D3gJLOYrQ63KZS8Ja-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3" allowfullscreen></iframe>
+      </div>
+
+      <div class="text test" data-aos="fade-right">
+        <h1>Test Responses</h1>
+        <p>
+          To assess usability and identify areas for improvement, I conducted user testing using the high-fidelity prototype with limited functionalities. Due to 
+          the project's personal nature and unfinished state, only five participants were recruited.
+        </p>
+        <p>
+          Each participant completed 3 standardized tasks designed for comparison. All participants successfully completed these tasks, which simulated common 
+          scenarios.
+        </p>
+        <div class="tests-row">
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>5</h2>
+              <p>Participants</p>
+            </div>
+          </div>     
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>3</h2>
+              <p>Tasks</p>
+            </div>
+          </div>         
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>100%</h2>
+              <p>Success</p>
+            </div>
+          </div>         
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>7.5 / 10</h2>
+              <p>Score</p>
+            </div>
+          </div>
+        </div>  
+        <p>
+          Following the tasks, participants were encouraged to explore the interface freely and provide feedback. The prototype 
+          received an average score of 7.5 out of 10, primarily reflecting its incomplete development. 
+        </p>
+        <p>
+          Participants expressed interest in evaluating a fully functional version for a more comprehensive assessment.      
+        </p>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Priority Revisions</h1>
+        <p>
+          To my surprise, there was only one common feedback from all participants: 
+        </p>
+        <div class="chat">
+          <div class="mine messages">
+            <div class="message last">
+              Is there anything I should improve?
+              </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Yes, the legibility of the text over the image within the "For You" section of the Home Page.
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in">
+          <img id="rev-light" class="revisions" src="assets/sintasaude/rev.png" alt="revisions">
+          <img style="display: none;" class="revisions" id="rev-dark" src="assets/sintasaude/rev1.png" alt="revisions">
+        </div>
+      </div>
+    </section>
+
+    <section id="finaldesign" data-title="Final Design" class="container">
+      <div>
+        <div class="text" data-aos="fade-right">
+          <h2><span class="circle"></span>Final Design</h2>
+          <h1>Your Healthcare on the Go</h1>
+        </div>
+        <div class="phone-gif" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="on-light" src="assets/sintasaude/onboard1.gif" alt="">
+            <img style="display: none;" class="gif" id="on-dark" src="assets/sintasaude/onboard.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Let's Get You Set Up!</h1>
+            <p>
+              A warm, benefit-oriented onboarding process that friendly welcomes first-time users.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif reverse" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="home-light" src="assets/sintasaude/home1.gif" alt="">
+            <img style="display: none;" class="gif" id="home-dark" src="assets/sintasaude/home.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>What's New?</h1>
+            <p>
+              Activities provided by the clinic, such as workshops, will appear prominently on the "For You" section.
+            </p>
+          </div>
+        </div>
+        <div class="gif-title" data-aos="zoom-in">
+          <div class="phone-gif">
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="spec-light" src="assets/sintasaude/especialidades1.gif" alt="">
+                <img style="display: none;" class="gif" id="spec-dark" src="assets/sintasaude/especialidades.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="exp-light" src="assets/sintasaude/explorar1.gif" alt="">
+                <img style="display: none;" class="gif" id="exp-dark" src="assets/sintasaude/explorar.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="faq-light" src="assets/sintasaude/faq1.gif" alt="">
+                <img style="display: none;" class="gif" id="faq-dark" src="assets/sintasaude/faq.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gif-row-text">
+            <h1>Dive Deeper Into Your Health</h1>
+            <p>
+              See all available specialties with detailed information or just explore some pathologies, their causes and treatments.
+              If you have any further questions, the most frequently asked questions are available to all users.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="pesquisa-light" src="assets/sintasaude/pesquisa1.gif" alt="">
+            <img style="display: none;" class="gif" id="pesquisa-dark" src="assets/sintasaude/pesquisa.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Let's Decode Your Body</h1>
+            <p>
+              Search symptoms from any of the three main screens.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif reverse" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="mar-light" src="assets/sintasaude/marcacao1.gif" alt="">
+            <img style="display: none;" class="gif" id="mar-dark" src="assets/sintasaude/marcacao.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Book Your Visit in a Few Taps</h1>
+            <p>
+              Clicking the "Schedule Appointment" button conveniently opens a WhatsApp chat for real-time communication with the clinic.
+            </p>
+          </div>
+        </div>
+        <div class="gif-title" data-aos="zoom-in">
+          <div class="phone-gif">
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="team-light" src="assets/sintasaude/equipa1.gif" alt="">
+                <img style="display: none;" class="gif" id="team-dark" src="assets/sintasaude/equipa.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="mapa-light" src="assets/sintasaude/mapa1.gif" alt="">
+                <img style="display: none;" class="gif" id="mapa-dark" src="assets/sintasaude/mapa.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gif-row-text">
+            <h1>Connect and Stay Informed</h1>
+            <p>
+              The "About Us" page features a staff board for transparency, building trust, and stronger patient-doctor connections. 
+              It's also your one-stop shop for everything you need to know: opening hours, address, and contact information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection" data-title="Conclusion" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Conclusion</h2>
+        <div class="reflection">
+          <h1>Reflection & Next Steps</h1>
+          <p>
+            The resulting design not only aligns with the clinic's brand identity, but it also delivers a 
+            seamless user experience. It offers intuitive interactions and empowers patients in their 
+            healthcare journey. 
+          </p>
+          <p>
+            By providing a user-friendly platform for exploring specialties, 
+            accessing informative content, and facilitating communication with the clinic, this app 
+            empowers users to make informed decisions.
+          </p>
+        </div>  
+      </div>
+      <div class="text" data-aos="fade-right">
+        <div class="went-nice">
+          <h1>So, What Went Well?</h1>
+          <div class="positive">
+            <ul>
+              <li>
+                <h2>Clear Navigation & Content 🏆</h2>
+                <p>
+                  Usability testing showed users praised the app's intuitive navigation and clear, comprehensive information 
+                  layout. High task completion rates confirmed this, indicating users sucessfully accomplished key actions 
+                  within the app.
+                </p>
+              <li>
+                <h2>Positive User Impression 👍</h2>
+                <p>
+                  Despite being a work in progress, users consistently praised the app's clean aesthetics and intuitive 
+                  navigation, showcasing its potential even in its unfinished state.
+                </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <div class="future">
+          <h1>That's Nice, But What Needs Improvement?</h1>
+          <div class="improve">
+            <ul>
+              <li>
+                <h2>Research & User Insights 🔎</h2>
+                <p>
+                  While this project focused on adapting existing website content 
+                  and functionalities to mobile, incorporating user interviews in the initial research phase 
+                  would have provided valuable insights.
+                </p>
+              </li>
+              <li>
+                <h2>Streamlined Appointments 📆</h2>
+                <p>
+                  Implementing in-app appointment scheduling could offer a more 
+                  convenient and efficient process for both users and clinic staff.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="improve">
+            <ul>
+              <li>
+                <h2>Improved Readability 📖</h2>
+                <p>
+                  Optimizing the content density on some pages by summarizing key points and 
+                  utilizing concise language could improve user comprehension and reduce cognitive load while browsing 
+                  the app.
+                </p>
+              </li>
+              <li>
+                <h2>Interactive Engagement 🚀</h2>
+                <p>
+                  Consider incorporating interactive features like quizzes or appointment reminders. 
+                  However, it's important to note that such features might necessitate the creation of a login and 
+                  account system.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="container2" class="container2" data-aos="fade-right">
+      <h1>You've reached the end! Explore my other projects:</h1>
+      <div class="next" data-aos="fade-right">
+        <a class="button project" href="padotar.html">Next Project - Padotar<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const continueButton = document.getElementById('continueButton');
+        const popup = document.getElementById('mobilePopup');
+      
+        continueButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+      });
+    </script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const mobileMenu = document.querySelector("button.mobile-menu-button");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          document.body.classList.add("fixed-position");
+        } else {
+          document.body.classList.remove("fixed-position");
+        }
+      });
+    </script>
+
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 1315 ||
+          document.documentElement.scrollTop > 1315
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script>
+      document.addEventListener("scroll", function () {
+      const discover = document.getElementById("discover");
+      const nav1 = document.querySelector(".nav1");
+      const lastSectionId = "container2";
+      const lastSection = document.getElementById(lastSectionId);
+      const discoverOffsetTop = discover.offsetTop - 100;
+
+      if (window.scrollY >= discoverOffsetTop && window.scrollY < lastSection.offsetTop) {
+        nav1.classList.add("visible");
+        } else {
+          nav1.classList.remove("visible");
+        }
+      });
+    </script>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav1 ul li a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          const offset = 50;
+
+          const scrollTo = targetElement.offsetTop - offset;
+          window.scrollTo({
+            top: scrollTo,
+            behavior: "smooth",
+          });
+
+          navLinks.forEach((link) => link.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        let fromTop = window.scrollY + 100;
+
+        navLinks.forEach((link) => {
+          const section = document.querySelector(link.hash);
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const dropdownButton = document.querySelector(".dropdown-button");
+      const navList = document.querySelector(".nav-list");
+      const activeSection = document.querySelector(".active-section");
+
+      dropdownButton.addEventListener("click", function () {
+        navList.classList.toggle("show-dropdown");
+      });
+
+      document.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        let currentSection = sections[0];
+
+        sections.forEach((section) => {
+          if (window.scrollY >= section.offsetTop - 100) {
+            currentSection = section;
+          }
+        });
+
+        activeSection.textContent = currentSection.getAttribute("data-title");
+      });
+
+      navList.addEventListener("click", function () {
+        navList.classList.remove("show-dropdown");
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mobileMenuButton = document.querySelector('.mobile-menu-button');
+        var overlay = document.createElement('div');
+        overlay.className = 'overlay';
+      
+        mobileMenuButton.addEventListener('click', function () {
+          document.body.appendChild(overlay);
+      
+          overlay.classList.toggle('active');
+          mobileMenuButton.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <script>
+      const lightModeToggle = document.getElementById('light-mode-toggle');
+      const body = document.body;
+
+      function toggleLightMode() {
+          body.classList.toggle('light-mode');
+
+          const isLightMode = body.classList.contains('light-mode');
+          localStorage.setItem('lightMode', isLightMode);
+
+          const logoLight = document.getElementById('logo-light');
+          const logoDark = document.getElementById('logo-dark');
+          if (isLightMode) {
+              logoLight.style.display = 'none';
+              logoDark.style.display = 'block';
+          } else {
+              logoLight.style.display = 'block';
+              logoDark.style.display = 'none';
+          }
+
+          const figmaLight = document.getElementById('figma-light');
+          const figmaDark = document.getElementById('figma-dark');
+          if (isLightMode) {
+              figmaLight.style.display = 'none';
+              figmaDark.style.display = 'block';
+          } else {
+              figmaLight.style.display = 'block';
+              figmaDark.style.display = 'none';
+          }
+
+          const flowLight = document.getElementById('flow-light');
+          const flowDark = document.getElementById('flow-dark');
+          if (isLightMode) {
+              flowLight.style.display = 'none';
+              flowDark.style.display = 'block';
+          } else {
+              flowLight.style.display = 'block';
+              flowDark.style.display = 'none';
+          }
+
+          const styleLight = document.getElementById('style-light');
+          const styleDark = document.getElementById('style-dark');
+          if (isLightMode) {
+            styleLight.style.display = 'none';
+            styleDark.style.display = 'block';
+          } else {
+            styleLight.style.display = 'block';
+            styleDark.style.display = 'none';
+          }
+
+          const revLight = document.getElementById('rev-light');
+          const revDark = document.getElementById('rev-dark');
+          if (isLightMode) {
+            revLight.style.display = 'none';
+            revDark.style.display = 'block';
+          } else {
+            revLight.style.display = 'block';
+            revDark.style.display = 'none';
+          }
+
+          const onLight = document.getElementById('on-light');
+          const onDark = document.getElementById('on-dark');
+          if (isLightMode) {
+            onLight.style.display = 'none';
+            onDark.style.display = 'block';
+          } else {
+            onLight.style.display = 'block';
+            onDark.style.display = 'none';
+          }
+
+          const homeLight = document.getElementById('home-light');
+          const homeDark = document.getElementById('home-dark');
+          if (isLightMode) {
+            homeLight.style.display = 'none';
+            homeDark.style.display = 'block';
+          } else {
+            homeLight.style.display = 'block';
+            homeDark.style.display = 'none';
+          }
+
+          const specLight = document.getElementById('spec-light');
+          const specDark = document.getElementById('spec-dark');
+          if (isLightMode) {
+            specLight.style.display = 'none';
+            specDark.style.display = 'block';
+          } else {
+            specLight.style.display = 'block';
+            specDark.style.display = 'none';
+          }
+
+          const expLight = document.getElementById('exp-light');
+          const expDark = document.getElementById('exp-dark');
+          if (isLightMode) {
+            expLight.style.display = 'none';
+            expDark.style.display = 'block';
+          } else {
+            expLight.style.display = 'block';
+            expDark.style.display = 'none';
+          }
+
+          const faqLight = document.getElementById('faq-light');
+          const faqDark = document.getElementById('faq-dark');
+          if (isLightMode) {
+            faqLight.style.display = 'none';
+            faqDark.style.display = 'block';
+          } else {
+            faqLight.style.display = 'block';
+            faqDark.style.display = 'none';
+          }
+
+          const pesquisaLight = document.getElementById('pesquisa-light');
+          const pesquisaDark = document.getElementById('pesquisa-dark');
+          if (isLightMode) {
+            pesquisaLight.style.display = 'none';
+            pesquisaDark.style.display = 'block';
+          } else {
+            pesquisaLight.style.display = 'block';
+            pesquisaDark.style.display = 'none';
+          }
+
+          const marLight = document.getElementById('mar-light');
+          const marDark = document.getElementById('mar-dark');
+          if (isLightMode) {
+            marLight.style.display = 'none';
+            marDark.style.display = 'block';
+          } else {
+            marLight.style.display = 'block';
+            marDark.style.display = 'none';
+          }
+
+          const teamLight = document.getElementById('team-light');
+          const teamDark = document.getElementById('team-dark');
+          if (isLightMode) {
+            teamLight.style.display = 'none';
+            teamDark.style.display = 'block';
+          } else {
+            teamLight.style.display = 'block';
+            teamDark.style.display = 'none';
+          }
+
+          const mapaLight = document.getElementById('mapa-light');
+          const mapaDark = document.getElementById('mapa-dark');
+          if (isLightMode) {
+            mapaLight.style.display = 'none';
+            mapaDark.style.display = 'block';
+          } else {
+            mapaLight.style.display = 'block';
+            mapaDark.style.display = 'none';
+          }
+
+      }
+
+      lightModeToggle.addEventListener('click', toggleLightMode);
+
+      const isLightMode = localStorage.getItem('lightMode') === 'true';
+
+      if (isLightMode) {
+          body.classList.add('light-mode');
+          document.getElementById('logo-light').style.display = 'none';
+          document.getElementById('logo-dark').style.display = 'block';
+
+          document.getElementById('figma-light').style.display = 'none';
+          document.getElementById('figma-dark').style.display = 'block';
+
+          document.getElementById('flow-light').style.display = 'none';
+          document.getElementById('flow-dark').style.display = 'block';
+
+          document.getElementById('style-light').style.display = 'none';
+          document.getElementById('style-dark').style.display = 'block';
+
+          document.getElementById('rev-light').style.display = 'none';
+          document.getElementById('rev-dark').style.display = 'block';
+
+          document.getElementById('on-light').style.display = 'none';
+          document.getElementById('on-dark').style.display = 'block';
+
+          document.getElementById('home-light').style.display = 'none';
+          document.getElementById('home-dark').style.display = 'block';
+
+          document.getElementById('spec-light').style.display = 'none';
+          document.getElementById('spec-dark').style.display = 'block';
+
+          document.getElementById('exp-light').style.display = 'none';
+          document.getElementById('exp-dark').style.display = 'block';
+
+          document.getElementById('faq-light').style.display = 'none';
+          document.getElementById('faq-dark').style.display = 'block';
+
+          document.getElementById('pesquisa-light').style.display = 'none';
+          document.getElementById('pesquisa-dark').style.display = 'block';
+
+          document.getElementById('mar-light').style.display = 'none';
+          document.getElementById('mar-dark').style.display = 'block';
+
+          document.getElementById('team-light').style.display = 'none';
+          document.getElementById('team-dark').style.display = 'block';
+
+          document.getElementById('mapa-light').style.display = 'none';
+          document.getElementById('mapa-dark').style.display = 'block';
+          
+      }
+    </script>
+
+    <script>
+        function openApp(appName, elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(appName).style.display = "flex";
+            elmnt.classList.add("active");
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("ac-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      function updateImages() {
+          var revLightElement = document.getElementById("rev-light");
+          var revDarkElement = document.getElementById("rev-dark");
+
+          if (window.innerWidth < 520) {
+              revLightElement.src = "./assets/sintasaude/rev-mobile1.png";
+              revDarkElement.src = "./assets/sintasaude/rev-mobile.png";
+          } else {
+              revLightElement.src = "./assets/sintasaude/rev1.png";
+              revDarkElement.src = "./assets/sintasaude/rev.png";
+          }
+      }
+
+      updateImages();
+      window.addEventListener("resize", updateImages);
+    </script>
+
+  </body>
+</html>

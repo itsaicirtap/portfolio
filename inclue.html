@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclue • Patrícia Marques</title>
+    <link rel="icon" type="image/x-icon" href="favicon1.ico">
+    <link rel="stylesheet" href="style/inclue.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+
+    <div class="popup" id="mobilePopup">
+      <div class="popup-content">
+        <p>For the best experience, visit me on a larger screen ✨</p>
+        <button id="continueButton" class="button">Continue on Mobile<i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img class="navbar-brand cursor" id="logo-light" src="assets/logo1.png" alt="logo">
+          <img class="navbar-brand cursor" style="display: none;" id="logo-dark" src="assets/logo.png" alt="logo">
+        </a>   
+        <nav id="mbmenu" class="nav">
+          <ul>
+            <li><a href="index.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Home<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="about.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>About<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/patpm" target="_blank"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Linkedin<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <button id="light-mode-toggle" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </ul>
+        </nav>
+      </div>
+      <button class="mobile-menu-button" title="Mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" class="myBtn active" title="Go to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <section class="hero">
+      <div data-aos="fade-right" class="cover">
+        <h2>Academic Project, UX Research, Visual Identity</h2>
+        <h1>Inclue</h1>
+        <p>7 min read</p>
+      </div>
+      <div data-aos="zoom-in" class="banner-img">
+        <img class="banner" src="assets/inclue/inclue.png" alt="banner">
+      </div>
+    </section>
+
+    <section id="overview" class="container" data-aos="fade-right">
+      <div class="overview">        
+        <div class="info">
+          <div class="info-content">
+            <h2>Roles</h2>
+            <p>UX Researcher<br>UI/UX Designer<br>Graphic Designer<br>Media Creator & Editor</p>
+          </div>
+          <div class="info-content">
+            <h2>Team</h2>
+            <p>Ana Lucília<br>Lígia Resende<br>Mafalda Pereira<br>Patrícia Marques</p>
+          </div>
+          <div class="info-content tools">
+            <h2>Tools</h2>
+            <p>Figma & Miro<br>Adobe Illustrator<br>Adobe Premiere Pro<br>Adobe Photoshop</p>
+          </div>
+          <div class="info-content timeline">
+            <h2>Timeline</h2>
+            <p>Mar - Jun 2022</p>
+          </div>         
+        </div>
+        <div class="context">
+          <h2>Context</h2>
+          <p>
+            Have you ever struggled to use a website or app because of a disability? Inclue, an interactive web documentary concept, 
+            aims to bridge this gap. Developed by our team of four for our Master's program in New Media and Web Practices, Inclue 
+            uses real stories and simulations to explore the challenges of navigating the digital world with accessibility barriers.
+          </p>
+          <p>
+            We created a primary video that initially presents all disabilities simultaneously to all users. After watching it, 
+            users can select a “character” and experience the video from the perspective of their specific disability. This approach 
+            helps users understand the challenges faced by each "character" and is complemented by excerpts from interviews and 
+            images provided by them. On the project page, we also present the ideal version of the video, accessible to everyone.
+          </p>
+          <p>
+            This project is essentially an interactive web documentary focused on accessibility and digital inclusion. Users can 
+            choose paths that reflect various perspectives based on different disabilities (visual, hearing, etc.), adopting an 
+            exploratory approach by navigating through predefined options that connect to multimedia content.
+          </p>
+          <p>
+            Unfortunately, due to time constraints, we were unable to complete this project. However, I believe the concept is 
+            relevant and worth sharing. What follows is a sketch of our ideas.
+          </p>           
+          <div class="proto-button">
+            <a href="https://icnova-novo.fcsh.unl.pt/inclue/"
+              target="_blank" class="button" title="View prototype">View Prototype<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav1">
+      <div class="active-section"></div>
+      <button class="dropdown-button">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <ul class="nav-list">
+        <li><a href="#research"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Research</a></li>
+        <li><a href="#define"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Define & Ideate</a></li>
+        <li><a href="#branding"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Branding</a></li>
+        <li><a href="#prototyping"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Prototype</a></li>
+        <li><a href="#finaldesign"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Final Design</a></li>
+        <li><a href="#reflection"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Conclusion</a></li>
+      </ul>
+    </div>
+
+    <section id="research" data-title="Research" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Research</h2>
+        <h1>Behind the Screens</h1>
+        <p>
+          We decided to conduct interviews with two types of users: computer engineers or programmers (ranging from students to 
+          senior developers) and professionals in the field of digital content creation. These two profiles would help us better 
+          understand the digital product market and why accessibility is still lacking in both interfaces and content.
+        </p>    
+        <p>
+          We created a brief script to ensure consistency across all interviews. Each member conducted two interviews, which took 
+          place either in person or remotely.
+        </p>
+      </div>
+
+      <div data-aos="fade-right"> 
+        <div class="discover">
+          <div class="prob-sol">
+            <h1>Accessibility Overlooked 🚧</h1>
+            <p>
+              Interface developers often do not prioritize accessibility in digital platforms, which can prevent people with 
+              disabilities from accessing content due to the absence of necessary resources and accommodations.
+            </p>         
+          </div>
+          <div class="prob-sol">
+            <h1>Our Proposal 💡</h1>
+            <p>
+              An interactive platform designed to simulate various disabilities can allow typical users to experience content 
+              as if they had those disabilities, providing an immersive understanding of accessibility challenges.            
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Connecting the Dots</h1>
+        <p>
+          After transcribing the interviews, we analyzed and grouped the responses. Each team member selected relevant excerpts, 
+          placing them on sticky notes in Miro. We then reviewed the similarities, which we grouped together to form our affinity map.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="map-light" src="assets/inclue/afinitymap1.png" alt="style guide">
+          <img style="display: none;" id="map-dark" src="assets/inclue/afinitymap.png" alt="style guide">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Gathering Findings</h1>
+        <p>
+          Main findings identified:
+        </p>
+        <div class="insights">
+          <button class="accordion">Screen Reader Unfamiliarity<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              There is a tenuous understanding of what a screen reader is, with the majority having never seen one in use.
+            </p>
+          </div>
+          <button class="accordion">Knowledge Gap in Accessibility<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              While awareness has improved, there's still a significant lack of understanding on the subject.
+            </p>
+          </div>
+          <button class="accordion">A Low Priority<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              It seems that companies tend to prioritize content for the common user, and accessibility is not considered a priority.
+            </p>
+          </div>
+          <button class="accordion">Unseen Struggles<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              While participants are aware of various disabilities, none of them are familiar with the daily challenges faced by 
+              individuals with disabilities.
+            </p>
+          </div>     
+        </div>
+      </div>
+
+      <div class="text pedro" data-aos="fade-right">
+        <h1>The Accessibility Advocate</h1>
+        <p>
+          After understanding and evaluating the common points of each interview, we created a persona, which was entirely based on 
+          our interviews and respective findings.
+        </p>
+        <div class="persona-card">           
+          <img class="persona" src="assets/inclue/persona.png" alt="persona">
+          <h1>João Pedro Silva</h1>
+          <h2>24 • IT Student • Part-time Developer</h2>
+          <p>
+            Aspiring to <strong>launch a startup</strong> and join an e-sports team, he seeks free time to pursue <strong>personal 
+            projects</strong>. While passionate about incorporating more <strong>accessibility features</strong> into his interface 
+            designs, current work priorities limit his ability to fully explore this interest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="define" data-title="Define & Ideate" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Define & Ideate</h2>
+        <h1>Crafting the User Experience</h1>
+        <p>
+          To begin creating content for our project, we considered various video approaches. We decided to conduct interviews in a 
+          studio setting, featuring people with disabilities sharing their experiences and challenges in the digital world. 
+          Our goal is to produce as much content as possible and develop a prototype based on these interviews, adapting our 
+          approach as needed. We reached out to several institutions and secured three contacts for potential interviewees:        
+        </p>
+        <div class="interviews">
+          <div class="person">
+            <div class="person-info">
+              <h2>André Almeira</h2>
+              <p>Deaf</p>
+            </div>
+          </div>        
+          <div class="person">
+            <div class="person-info">
+              <h2>André Muricy</h2>
+              <p>Color Blind</p>
+            </div>
+          </div>         
+          <div class="person">
+            <div class="person-info">
+              <h2>Rita Pereira</h2>
+              <p>Dyslexic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text objective" data-aos="fade-right">
+        <h1>The Big Picture</h1>
+        <p>
+          Our primary objective is to shed light on the challenges faced by individuals with disabilities in the digital realm.
+        </p>
+        <div class="insights">
+          <button class="accordion">Scroll for Inclusion<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              We aim to create an immersive scrolling experience that highlights the challenges faced by people with disabilities. 
+              By subtly revealing content, we hope to shed light on potential solutions directly from those affected.
+            </p>
+          </div>
+          <button class="accordion">Choose Your Own Adventure<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              Users will be presented with a compelling choice. Split into three, the screen offers tantalizing photo glimpses of 
+              different experiences. These visual cues are designed to pique curiosity and encourage users to delve deeper into 
+              the stories behind the images.
+            </p>
+          </div>
+          <button class="accordion">Immerse Yourself<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              Once a user selects an experience, a tailored video begins, showcasing the specific disability. To simulate color 
+              blindness, image colors and contrast will be adjusted. Deafness will be represented through a silent image. Dyslexia 
+              will be portrayed through altered text, such as letter substitutions or dense text blocks, hindering readability. 
+              After this video concludes, a simple scroll reveals the full testimony and additional details.
+            </p>
+          </div>
+          <button class="accordion">Navigation Decision<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              We determined that a persistent navigation bar would hinder readability and detract from the overall aesthetic. 
+              Instead, users can navigate using footer links or the dedicated 'Back' and 'Next Experience' buttons located at the 
+              end of each page.
+            </p>
+          </div>
+          <button class="accordion">Behind the Scenes<i class="fa-solid fa-chevron-down"></i></button>
+          <div class="panel">
+            <p>
+              To provide comprehensive information, we decided to include an "About Us" page highlighting the team, an "About the 
+              Project" page detailing our concept and goals, and a "Know More" section offering contact details for relevant 
+              associations.
+            </p>
+          </div>        
+        </div>
+      </div>      
+
+      <div class="text" data-aos="fade-right">
+        <h1>Your Journey Starts Here</h1>
+        <p>
+          Despite its simplicity, we crafted a site map to assess navigation, ensuring users can easily find the content they seek 
+          and enhancing their overall experience.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="flow-light" src="assets/inclue/sitemap1.png" alt="flow">
+          <img style="display: none;" id="flow-dark" src="assets/inclue/sitemap.png" alt="flow">
+        </div>
+      </div>
+    </section>
+
+    <section id="branding" data-title="Branding" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Branding</h2>
+        <h1>Inclue</h1>
+        <p>
+          Inclue emerged from the need for a concise name encapsulating both the documentary's form and content. Combining 
+          "inclusive" and "clue," the name symbolizes the project's focus on understanding diverse experiences and offering valuable 
+          insights.
+        </p>
+        <p>
+          After exploring various design concepts in Adobe Illustrator, we selected a geometric interpretation of the word "Inclue" 
+          for our logo. This approach aimed for a visually striking yet accessible representation of the project. User testing 
+          confirmed the logo's readability and overall effectiveness. To enhance recognition and readability, subtle adjustments 
+          were made to specific letterforms without compromising the geometric aesthetic.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="inclue-light" src="assets/inclue/logo.png" alt="style guide">
+          <img style="display: none;" id="inclue-dark" src="assets/inclue/logo1.png" alt="style guide">
+        </div>
+        <p>
+          Built on the Roboto font, the logo utilizes diverse geometric shapes to symbolize inclusion and unity. This approach 
+          creates a versatile visual identity that can be expanded upon for future design elements. A color contrast test using the 
+          Dalton Chrome plugin verified the logo's accessibility for individuals with color blindness.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="tests-light" src="assets/inclue/testes1.png" alt="style guide">
+          <img style="display: none;" id="tests-dark" src="assets/inclue/testes.png" alt="style guide">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+      <h1>Designing for Consistency</h1>
+        <p>
+          To engage a younger audience, we selected a vibrant color palette featuring calming blue, energizing yellow, and wise 
+          purple. Prioritizing accessibility, we ensured high-contrast colors suitable for color blindness, including the less 
+          common Tritanopia. The sans-serif Roboto font, chosen for its readability, will be prominent throughout the website to 
+          accommodate users with visual impairments or dyslexia.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="style-light" src="assets/inclue/styleguide1.png" alt="style guide">
+          <img style="display: none;" id="style-dark" src="assets/inclue/styleguide.png" alt="style guide">
+        </div>
+      </div>
+    </section>
+
+    <section id="prototyping" data-title="Prototype" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Prototype</h2>
+        <h1>Laying the Groundwork</h1>
+        <p>
+          Building on the insights gained from the previous phases, we moved forward to create low-fidelity wireframe sketches.        
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="lofi" src="assets/inclue/sketches.jpg" alt="sketches">
+        </div>
+      </div>
+     
+      <div class="text" data-aos="fade-right">
+        <h1>Wireframes and Static Prototype</h1>
+        <p>
+          To define the website layout, we created simple wireframes and a static prototype, which facilitated the visualization of 
+          where the existing content would be placed.        
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="wireframes" src="assets/inclue/wireframes.png" alt="wireframes">
+        </div>
+        <p>
+          At the time, while still in the learning phase and unaware of Figma's full potential, we encountered limitations in its 
+          ability to freely insert videos, which were the primary content for our project. As a result, we had to resort to another 
+          tool for prototype development.        
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="static" src="assets/inclue/static.png" alt="wireframes">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Hi-fi Interactive Prototype</h1>
+        <p>
+          After finalizing the static prototype, we developed the interactive prototype with our teacher's guidance, who translated 
+          the Figma model into a functional page with real interactions.
+        </p>
+        <p>
+          Currently, the website offers an optimal experience on desktop devices. While accessible on smaller screens, certain 
+          design elements and interactions may be affected. Following the project presentation, we plan to refine and enhance the 
+          interactive prototype through a redesign process. The version below represents an early-stage prototype used for usability 
+          testing.
+        </p>
+        <div class="proto-button">
+          <a href="https://icnova-novo.fcsh.unl.pt/inclue/" target="_blank" class="button" title="View prototype">View Prototype<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="text test" data-aos="fade-right">
+        <h1>Testing the Waters</h1>
+        <p>
+          To gather insights into user experiences, we conducted usability tests with four participants who interacted with an early-stage prototype of our website. Given the project's exploratory nature, we adopted an open-ended testing approach, allowing users to navigate freely and provide feedback. This enabled us to assess navigation, information discovery, and overall comprehension of the project's goals.         
+        </p>
+        <div class="chat">
+          <div class="mine messages">
+            <div class="message last">
+              Is there anything we should improve?
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Hide the navigation bar on the first page to emphasize the interactive documentary format.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Add more arrows to guide users after video playback.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Preserve the documentary's visual integrity by removing distracting YouTube elements and creating unique thumbnails for each video.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Include explicit prompts encouraging users to rewatch seemingly identical clips to fully grasp the intended experience.            
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Consider fewer videos on André Almeida's page for better usability.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Improve text clarity, cohesion, and readability by adjusting font size.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Offer written accessibility suggestions for improving digital accessibility.
+            </div>
+          </div>
+        </div>
+        <p>
+          While the feedback was valuable, project deadlines precluded the implementation of suggested improvements. As such, the 
+          images provided in the next section still reflect the prototype used in usability tests.
+        </p>
+      </div>
+    </section>
+
+    <section id="finaldesign" data-title="Final Design" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Final Design</h2>
+        <h1>An Experience for Everyone!</h1>
+        <div class="phone-gif">
+          <div>
+            <img class="gif" id="home-light" src="assets/inclue/home.gif" alt="">
+            <img style="display: none;" class="gif" id="home-dark" src="assets/inclue/home1.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Shared Challenges</h1>
+            <p>
+              The homepage features a minimalist intro screen with the logo and essential user guidance. A brief introductory video follows, setting the project's <em>"What would it be like if..."</em> theme.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif reverse">
+          <div>
+            <img class="gif" id="split-light" src="assets/inclue/splitscreen.gif" alt="">
+            <img style="display: none;" class="gif" id="split-dark" src="assets/inclue/splitscreen1.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Choose Your Path</h1>
+            <p>
+              A split screen presents three experience choices after the intro. Each option includes a conceptual image and brief 
+              interviewee details. Selecting an option initiates a tailored video simulating a specific disability.
+            </p>
+          </div>
+        </div>
+        <div class="gif-title">
+          <div>
+            <div class="phone-gif gif-column">
+              <div class="gif-row">
+                <div>
+                <img class="gif" id="andre-light" src="assets/inclue/andre.gif" alt="">
+                <img style="display: none;" class="gif" id="andre-dark" src="assets/inclue/andre1.gif" alt="">
+                </div>
+              </div>
+              <div class="gif-row">
+                <div>
+                  <img class="gif" id="rita-light" src="assets/inclue/rita.gif" alt="">
+                  <img style="display: none;" class="gif" id="rita-dark" src="assets/inclue/rita1.gif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="phone-gif last-gif">
+              <div>
+                <img class="gif" id="andrem" src="assets/inclue/andrem.gif" alt="">
+                <img style="display: none;" class="gif" id="andrem-dark" src="assets/inclue/andrem1.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gif-row-text">
+            <h1>Voices from the Digital Frontier</h1>
+            <p>
+              Intimate testimonials from individuals facing digital barriers follow the simulated experience. Through personal 
+              stories and accompanying visuals, the project aims to foster empathy and inspire innovative solutions for inclusive 
+              design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection" data-title="Conclusion" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Conclusion</h2>
+        <div class="reflection">
+          <h1>Reflection & Next Steps</h1>
+          <p>
+              Exploring inclusion and accessibility through this project provided valuable insights from those directly affected. 
+              While the project's outcomes are promising, its full potential remains untapped due to the unfinished interactive 
+              elements. Future development should prioritize enhancing these elements, alongside implementing user feedback. The 
+              project's emphasis on interactive storytelling and user-centered design has the potential to significantly impact 
+              awareness and understanding of digital accessibility.
+          </p>
+        </div>  
+      </div>
+      <div class="improve" data-aos="fade-right">
+        <ul>         
+          <li>
+            <h2>Research & User Insights 🔎</h2>
+            <p>
+              Address identified issues in the prototype and conduct a retest to ensure the improvements are effective.
+            </p>
+          </li>
+          <li>
+            <h2>Collaborating for Impact 🤝</h2>
+            <p>
+              By partnering with accessibility organizations and expanding the project's reach, we can contribute to a more 
+              inclusive digital landscape.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="container2" class="container2" data-aos="fade-right">
+      <h1>You've Reached the End! Explore My Other Projects:</h1>
+      <div class="next" data-aos="fade-right">
+        <a class="button project" href="sintasaude.html">Next Project - Sinta Saúde<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const continueButton = document.getElementById('continueButton');
+      const popup = document.getElementById('mobilePopup');
+
+      continueButton.addEventListener('click', function() {
+          popup.style.display = 'none';
+      });
+    });
+    </script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const mobileMenu = document.querySelector("button.mobile-menu-button");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          document.body.classList.add("fixed-position");
+        } else {
+          document.body.classList.remove("fixed-position");
+        }
+      });
+    </script>
+
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 1315 ||
+          document.documentElement.scrollTop > 1315
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script>
+      document.addEventListener("scroll", function () {
+      const research= document.getElementById("research");
+      const nav1 = document.querySelector(".nav1");
+      const lastSectionId = "container2";
+      const lastSection = document.getElementById(lastSectionId);
+      const researchOffsetTop = research.offsetTop - 100;
+
+      if (window.scrollY >= researchOffsetTop && window.scrollY < lastSection.offsetTop) {
+        nav1.classList.add("visible");
+        } else {
+          nav1.classList.remove("visible");
+        }
+      });
+    </script>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav1 ul li a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          const offset = 50;
+
+          const scrollTo = targetElement.offsetTop - offset;
+          window.scrollTo({
+            top: scrollTo,
+            behavior: "smooth",
+          });
+
+          navLinks.forEach((link) => link.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        let fromTop = window.scrollY + 100;
+
+        navLinks.forEach((link) => {
+          const section = document.querySelector(link.hash);
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const dropdownButton = document.querySelector(".dropdown-button");
+      const navList = document.querySelector(".nav-list");
+      const activeSection = document.querySelector(".active-section");
+
+      dropdownButton.addEventListener("click", function () {
+        navList.classList.toggle("show-dropdown");
+      });
+
+      document.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        let currentSection = sections[0];
+
+        sections.forEach((section) => {
+          if (window.scrollY >= section.offsetTop - 100) {
+            currentSection = section;
+          }
+        });
+
+        activeSection.textContent = currentSection.getAttribute("data-title");
+      });
+
+      navList.addEventListener("click", function () {
+        navList.classList.remove("show-dropdown");
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mobileMenuButton = document.querySelector('.mobile-menu-button');
+        var overlay = document.createElement('div');
+        overlay.className = 'overlay';
+      
+        mobileMenuButton.addEventListener('click', function () {
+          document.body.appendChild(overlay);
+      
+          overlay.classList.toggle('active');
+          mobileMenuButton.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <script>
+      const lightModeToggle = document.getElementById('light-mode-toggle');
+      const body = document.body;
+
+      function toggleLightMode() {
+          body.classList.toggle('light-mode');
+
+          const isLightMode = body.classList.contains('light-mode');
+          localStorage.setItem('lightMode', isLightMode);
+
+          const logoLight = document.getElementById('logo-light');
+          const logoDark = document.getElementById('logo-dark');
+          if (isLightMode) {
+              logoLight.style.display = 'none';
+              logoDark.style.display = 'block';
+          } else {
+              logoLight.style.display = 'block';
+              logoDark.style.display = 'none';
+          }
+
+          const mapLight = document.getElementById('map-light');
+          const mapDark = document.getElementById('map-dark');
+          if (isLightMode) {
+            mapLight.style.display = 'none';
+            mapDark.style.display = 'block';
+          } else {
+            mapLight.style.display = 'block';
+            mapDark.style.display = 'none';
+          }
+
+          const flowLight = document.getElementById('flow-light');
+          const flowDark = document.getElementById('flow-dark');
+          if (isLightMode) {
+              flowLight.style.display = 'none';
+              flowDark.style.display = 'block';
+          } else {
+              flowLight.style.display = 'block';
+              flowDark.style.display = 'none';
+          }
+
+          const inclueLight = document.getElementById('inclue-light');
+          const inclueDark = document.getElementById('inclue-dark');
+          if (isLightMode) {
+            inclueLight.style.display = 'none';
+            inclueDark.style.display = 'block';
+          } else {
+            inclueLight.style.display = 'block';
+            inclueDark.style.display = 'none';
+          }
+
+          const testsLight = document.getElementById('tests-light');
+          const testsDark = document.getElementById('tests-dark');
+          if (isLightMode) {
+            testsLight.style.display = 'none';
+            testsDark.style.display = 'block';
+          } else {
+            testsLight.style.display = 'block';
+            testsDark.style.display = 'none';
+          }
+
+          const styleLight = document.getElementById('style-light');
+          const styleDark = document.getElementById('style-dark');
+          if (isLightMode) {
+            styleLight.style.display = 'none';
+            styleDark.style.display = 'block';
+          } else {
+            styleLight.style.display = 'block';
+            styleDark.style.display = 'none';
+          }
+
+          const walkLight = document.getElementById('home-light');
+          const walkDark = document.getElementById('home-dark');
+          if (isLightMode) {
+            walkLight.style.display = 'none';
+            walkDark.style.display = 'block';
+          } else {
+            walkLight.style.display = 'block';
+            walkDark.style.display = 'none';
+          }
+
+          const splitLight = document.getElementById('split-light');
+          const splitDark = document.getElementById('split-dark');
+          if (isLightMode) {
+            splitLight.style.display = 'none';
+            splitDark.style.display = 'block';
+          } else {
+            splitLight.style.display = 'block';
+            splitDark.style.display = 'none';
+          }
+
+          const andreLight = document.getElementById('andre-light');
+          const andreDark = document.getElementById('andre-dark');
+          if (isLightMode) {
+            andreLight.style.display = 'none';
+            andreDark.style.display = 'block';
+          } else {
+            andreLight.style.display = 'block';
+            andreDark.style.display = 'none';
+          }
+
+          const ritaLight = document.getElementById('rita-light');
+          const ritaDark = document.getElementById('rita-dark');
+          if (isLightMode) {
+            ritaLight.style.display = 'none';
+            ritaDark.style.display = 'block';
+          } else {
+            ritaLight.style.display = 'block';
+            ritaDark.style.display = 'none';
+          }
+
+          const andremLight = document.getElementById('andrem-light');
+          const andremDark = document.getElementById('andrem-dark');
+          if (isLightMode) {
+            andremLight.style.display = 'none';
+            andremDark.style.display = 'block';
+          } else {
+            andremLight.style.display = 'block';
+            andremDark.style.display = 'none';
+          }
+
+      }
+
+      lightModeToggle.addEventListener('click', toggleLightMode);
+
+      const isLightMode = localStorage.getItem('lightMode') === 'true';
+
+      if (isLightMode) {
+          body.classList.add('light-mode');
+          document.getElementById('logo-light').style.display = 'none';
+          document.getElementById('logo-dark').style.display = 'block';
+
+          document.getElementById('map-light').style.display = 'none';
+          document.getElementById('map-dark').style.display = 'block';
+
+          document.getElementById('flow-light').style.display = 'none';
+          document.getElementById('flow-dark').style.display = 'block';
+
+          document.getElementById('test-light').style.display = 'none';
+          document.getElementById('test-dark').style.display = 'block';
+
+          document.getElementById('brand-light').style.display = 'none';
+          document.getElementById('brand-dark').style.display = 'block';
+
+          document.getElementById('style-light').style.display = 'none';
+          document.getElementById('style-dark').style.display = 'block';
+
+          document.getElementById('home-light').style.display = 'none';
+          document.getElementById('home-dark').style.display = 'block';
+
+          document.getElementById('split-light').style.display = 'none';
+          document.getElementById('split-dark').style.display = 'block';
+
+          document.getElementById('andre-light').style.display = 'none';
+          document.getElementById('andre-dark').style.display = 'block';
+
+          document.getElementById('rita-light').style.display = 'none';
+          document.getElementById('rita-dark').style.display = 'block';
+
+          document.getElementById('andrem-light').style.display = 'none';
+          document.getElementById('andrem-dark').style.display = 'block';
+      }
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("ac-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>

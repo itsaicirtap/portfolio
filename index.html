@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home • Patrícia Marques</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+
+    <header class="envelope" id="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img class="navbar-brand" id="logo-light" src="assets/logo1.png" alt="logo">
+          <img class="navbar-brand" style="display: none;" id="logo-dark" src="assets/logo.png" alt="logo">
+        </a>      
+        <nav id="mbmenu" class="nav">
+          <ul>
+            <li><a class="active" href="index.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Home<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="about.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>About<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/patpm" target="_blank"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Linkedin<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <button id="light-mode-toggle" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="mobile-menu-button" title="Mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="container">
+        <div class="intro" data-aos="fade-right">
+          <h2>Hi there 👋,</h2>
+          <h1>I'm <a class="rotated-text" href="about.html">Patrícia</a>, a designer with a passion for creating meaningful digital experiences.</h1>
+        </div>
+        <div class="scroll">
+          <a href="#recent"><i class="button1 fa-solid fa-arrow-down-long"></i></a>
+        </div>
+      </div> 
+    </header>
+
+    <div id="recent" class="containerx">
+      <div class="section">
+        <div class="row">
+          <div class="card-container card-40">
+            <a href="sintasaude.html" class="card"></a>
+            <div class="card-text">
+              <p>/ Personal Project, UI/UX</p>  
+              <h1>Sinta Saúde <i class="fa-solid fa-arrow-right"></i></h1>
+            </div>
+          </div>
+          <div class="card-container card-60">  
+            <a href="padotar.html" class="card"></a>
+            <div class="card-text">
+              <p>/ Thesis Project, Visual Identity, UI/UX</p>              
+              <h1>Padotar <i class="fa-solid fa-arrow-right"></i></h1>           
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-container card2-60">  
+            <a href="inclue.html" class="card"></a>
+            <div class="card-text">
+              <p>/ Academic Project, UX Research, Visual Identity</p>
+              <h1>Inclue <i class="fa-solid fa-arrow-right"></i></h1>
+            </div>
+          </div>
+          <div class="card-container card2-40">  
+            <a class="card"><i class="fa-solid fa-lock"></i></a>
+            <div class="card-text">
+              <p>/ New Project</p>
+              <h1>Coming Soon <i class="fa-solid fa-arrow-right"></i></h1>          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const mobileMenu = document.querySelector("button.mobile-menu-button");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          document.body.classList.add("fixed-position");
+        } else {
+          document.body.classList.remove("fixed-position");
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mobileMenuButton = document.querySelector('.mobile-menu-button');
+        var overlay = document.createElement('div');
+        overlay.className = 'overlay';
+      
+        mobileMenuButton.addEventListener('click', function () {
+          document.body.appendChild(overlay);
+      
+          overlay.classList.toggle('active');
+          mobileMenuButton.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <script>
+      const lightModeToggle = document.getElementById('light-mode-toggle');
+      const body = document.body;
+
+      function toggleLightMode() {
+        body.classList.toggle('light-mode');
+
+        const isLightMode = body.classList.contains('light-mode');
+        localStorage.setItem('lightMode', isLightMode);
+
+        const logoLight = document.getElementById('logo-light');
+        const logoDark = document.getElementById('logo-dark');
+        if (isLightMode) {
+            logoLight.style.display = 'none';
+            logoDark.style.display = 'block';
+        } else {
+            logoLight.style.display = 'block';
+            logoDark.style.display = 'none';
+        }
+      }
+
+      lightModeToggle.addEventListener('click', toggleLightMode);
+
+      const isLightMode = localStorage.getItem('lightMode') === 'true';
+
+      if (isLightMode) {
+        body.classList.add('light-mode');
+        document.getElementById('logo-light').style.display = 'none';
+        document.getElementById('logo-dark').style.display = 'block';
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padotar • Patrícia Marques</title>
+    <link rel="icon" type="image/x-icon" href="favicon1.ico">
+    <link rel="stylesheet" href="style/padotar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+
+    <div class="popup" id="mobilePopup">
+      <div class="popup-content">
+        <p>For the best experience, visit me on a larger screen ✨</p>
+        <button id="continueButton" class="button">Continue on Mobile<i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img class="navbar-brand cursor" id="logo-light" src="assets/logo1.png" alt="logo">
+          <img class="navbar-brand cursor" style="display: none;" id="logo-dark" src="assets/logo.png" alt="logo">
+        </a>   
+        <nav id="mbmenu" class="nav">
+          <ul>
+            <li><a href="index.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Home<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="about.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>About<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/patpm" target="_blank"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Linkedin<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <button id="light-mode-toggle" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </ul>
+        </nav>
+      </div>
+      <button class="mobile-menu-button" title="Mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" class="myBtn active" title="Go to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <section class="hero">
+      <div data-aos="fade-right" class="cover">
+        <h2>Thesis Project, Visual Identity, UI/UX</h2>
+        <h1>Padotar</h1>
+        <p>8 min read</p>
+      </div>
+      <div data-aos="zoom-in" class="banner-img">
+        <img class="banner" src="assets/padotar/thumb.png" alt="banner">
+      </div>
+    </section>
+
+    <section id="overview" class="container" data-aos="fade-right">
+      <div class="overview">        
+        <div class="info">
+          <div class="info-content">
+            <h2>Roles</h2>
+            <p>UX Researcher<br>UI/UX Designer</p>
+          </div>
+          <div class="info-content">
+            <h2>Tools</h2>
+            <p>Figma<br>Adobe Illustrator</p>
+          </div>
+          <div class="info-content">
+            <h2>Timeline</h2>
+            <p>Dec 2022 - Mar 2023</p>
+          </div>         
+        </div>
+        <div class="context">
+          <h2>Context</h2>
+          <p>
+            This project, part of my master's thesis, focuses on a mobile app aimed at addressing the 
+            increasing number of abandoned animals, which burdens animal shelters and protection 
+            associations. Unlike social media platforms used by shelters, this app categorizes content 
+            for a more intuitive user experience, facilitating the adoption process, enhancing 
+            communication with shelters, and providing educational content for pet owners.
+          </p>
+          <p>
+            Padotar is a fictitious shelter created purely for the project. The conception 
+            of the mobile app was restricted to the process of developing a digital 
+            product from a design perspective and was not implemented after the 
+            evaluation of the interactive hi-fi prototype. For more 
+            details, the full text is available <a class="tese" href="https://run.unl.pt/handle/10362/167613" 
+            target="_blank">here</a>.
+          </p>           
+          <div class="proto-button">
+            <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5Jab0oVfmS7NVWWjRxdTMO%2FPadotar-Final%3Fnode-id%3D46-384%26starting-point-node-id%3D46%253A384%26t%3DPsfMA7r2fP6sxMQn-1"
+              target="_blank" class="button" title="View prototype">View Prototype<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav1">
+      <div class="active-section"></div>
+      <button class="dropdown-button">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+
+      <ul class="nav-list">
+        <li><a href="#research"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Research</a></li>
+        <li><a href="#define"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Define & Ideate</a></li>
+        <li><a href="#branding"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Branding</a></li>
+        <li><a href="#prototyping"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Prototype</a></li>
+        <li><a href="#finaldesign"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Final Design</a></li>
+        <li><a href="#reflection"><i class="fa-solid fa-arrow-right" style="display: none;"></i>Conclusion</a></li>
+      </ul>
+    </div>
+
+    <section id="research" data-title="Research" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Research</h2>
+        <h1>The Digital Pawprint</h1>
+        <p>
+          An examination of local animal shelters' online strategies revealed a distribution of platforms utilized:
+        </p>
+        <div class="shelters-row">
+          <div class="shelters-column">
+            <div class="shelters-card">
+              <h2>17</h2>
+              <p>Facebook</p>
+            </div>
+          </div>         
+          <div class="shelters-column">
+            <div class="shelters-card">
+              <h2>13</h2>
+              <p>Website</p>
+            </div>
+          </div>           
+          <div class="shelters-column">
+            <div class="shelters-card">
+              <h2>11</h2>
+              <p>Instagram</p>
+            </div>
+          </div>            
+          <div class="shelters-column">
+            <div class="shelters-card">
+              <h2>2</h2>
+              <p>Youtube</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          However, none of the 18 shelters have their own mobile app.
+        </p>
+      </div>
+
+      <div data-aos="fade-right"> 
+        <div class="discover">
+          <div class="prob-sol">
+            <h1>A Growing Challenge ⏳</h1>
+            <p>
+              No animal shelter in the research area offers a mobile app with features that 
+              facilitate and/or contribute to the adoption and post-adoption process.
+            </p>
+          </div>
+          <div class="prob-sol">
+            <h1>The Solution 💡</h1>
+            <p>
+              Developing a replicable mobile app for shelters with adoption features, direct 
+              communication, and well-organized educational content, aimed at potentially 
+              enhancing adoption rates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Unveiling the Competition</h1>
+        <p>
+          Despite the limited search, I only found one relevant platform: <a class="petify" href="https://petify.pt" 
+          target="_blank">Petify</a>, an interactive website with the primary goal of assisting abandoned 
+          animals in finding a family. They operate essentially like a "lost and found", allowing 
+          individuals or shelters to post advertisements for adoptions or lost animals.
+        </p>
+        <div class="example-container">
+          <div class="example-card active">
+            <button class="prev-btn" onclick="prevExample()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="example-align">
+              <div class="example-name">
+                <img class="example-img" src="assets/padotar/petifylogo.png" alt="Petify">
+                  <div class="example-title">
+                    <h2>Strengths 💪</h2>
+                  </div>
+              </div>
+              <div class="pros-cons">
+                <div>
+                  <ul>
+                    <li>Increased visibility;</li>
+                    <li>Community engagement;</li>
+                    <li>Promotes civic responsability;</li>
+                    <li>Quick dissemination of information;</li>
+                    <li>Educational opportunities.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="next-btn" onclick="nextExample()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="example-card">
+            <button class="prev-btn" onclick="prevExample()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="example-align">
+              <div class="example-name">
+                <img class="example-img" src="assets/padotar/petifylogo.png" alt="Petify">
+                <div class="example-title">
+                  <h2>Weaknesses 🎯</h2>
+                </div>
+              </div>
+              <div class="pros-cons">
+                <div>
+                  <ul>
+                    <li>Accuracy of information;</li>
+                    <li>Overwhelming volume;</li>
+                    <li>Authenticity and privacy concerns;</li>
+                    <li>Confirmation of adoptions;</li>
+                    <li>Managing found pets.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="next-btn" onclick="nextExample()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Bridging the Gap</h1>
+        <p>
+          Two interviews were conducted with individuals working in animal welfare institutions. During these interviews, 
+          participants shared problems and needs, providing valuable information for the project's development. In total, twelve 
+          questions were asked, covering the general context of the shelter, the adoption process, the impact of new media, and 
+          the implementation of alternative digital tools.
+        </p>
+        <p>
+          Subsequently, I conducted brief, informal conversations with two potencial users that provided valuable insights 
+          that helped define functionalities and create user personas reflecting real experiences.
+        </p>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Gathering Findings</h1>
+        <p>
+          Summary of findings identified through literature review and interviews:
+        </p>
+        <div class="insights">
+          <div class="list">
+            <button class="accordion">Information Prioritization<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Size, behavior and personality are determining factors in adoption.
+              </p>
+            </div>
+            <button class="accordion">Visibility<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Give visibility to sponsorships, donations, members and volunteering.
+              </p>
+            </div>
+            <button class="accordion">Awareness and Educational Content<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Clearing up common doubts among pet owners and educating potential adopters are key to successful pet 
+                placements.
+              </p>
+            </div>
+          </div>
+          <div class="list">
+            <button class="accordion">News<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Provide news about the shelter and the activities carried out by them.
+              </p>
+            </div>
+            <button class="accordion">Sustainability<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Solidarity sales contribute to the financial sustainability of the shelter.
+              </p>
+            </div>
+            <button class="accordion">Consistent Branding<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Maintain a coherent aesthetic and positive speech.
+              </p>
+            </div>     
+          </div>
+        </div>
+      </div>
+
+      <div class="text user" data-aos="fade-right">
+        <h1>Who Needs This App?</h1>
+        <p>
+          These fictional characters represent our ideal users. They are based not only on the information gathered from 
+          the interviews but also on the experiences and needs of real people I briefly spoke with about this project.
+        </p>
+        <p>
+          Three personas were created to match the three different types of users identified: people who work in shelters, 
+          people who have already adopted an animal, and people who intend to adopt.
+        </p>
+        <div class="slider-container">
+          <div class="persona-card active">
+            <button class="prev-btn" onclick="prevPersona()"><i class="fa-solid fa-arrow-left"></i></button>
+            <img class="persona" src="assets/padotar/leonor.png" alt="persona">
+            <h1>Leonor Martins</h1>
+            <h2>28 • Accountant</h2>
+            <p>
+                Her main goal is to adopt a second pet. She needs a <strong>reliable source of information</strong> and tips for tutors 
+                and she's interested in <strong>following the work</strong> carried out by shelters.
+            </p>
+            <button class="next-btn" onclick="nextPersona()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="persona-card">
+            <button class="prev-btn" onclick="prevPersona()"><i class="fa-solid fa-arrow-left"></i></button>
+            <img class="persona" src="assets/padotar/gabriel.png" alt="persona">
+            <h1>Gabriel Silva</h1>
+            <h2>25 • Designer</h2>
+            <p>
+                He would like to reduce his feeling of loneliness by adopting a pet. He needs to provide a home 
+                for a pet and acquire a <strong>sense of responsibility</strong> in caring for it, ensuring the pet fits well into 
+                his lifestyle.
+            </p>
+            <button class="next-btn" onclick="nextPersona()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="persona-card">
+            <button class="prev-btn" onclick="prevPersona()"><i class="fa-solid fa-arrow-left"></i></button>
+            <img class="persona" src="assets/padotar/mariana.png" alt="persona">
+            <h1>Mariana Gouveia</h1>
+            <h2>40 • Volunteer</h2>
+            <p>
+              Her goal is to <strong>raise awareness</strong> of the commitment required for adoption and the associated care. She 
+              needs an <strong>effective means of adoption</strong> to increase the number of adoptions and greater <strong>post-adoption 
+              monitoring</strong> to ensure the well-being of the adopted pets.
+            </p>
+            <button class="next-btn" onclick="nextPersona()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="define" data-title="Define & Ideate" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Define & Ideate</h2>
+        <h1>Prioritize Features</h1>
+        <p>
+          Due to time constraints, careful selection and prioritization of features were essential for the mobile app design. 
+          A comprehensive list of proposed features was evaluated, and two features with potentially longer 
+          development times and minimal impact on the core functionality were removed to streamline the design process - Pet
+          Hotel Map and Solidarity Store.
+        </p>
+        <div class="features">
+          <div class="list">            
+            <button class="accordion">Search Filter<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Allows the user to select the desired characteristics when searching for a pet.
+              </p>
+            </div>
+            <button class="accordion">Adoptions<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Displays all available pets with detailed information and an adoption form that is sent directly to the shelter.
+              </p>
+            </div>
+            <button class="accordion">Quiz<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                An initial optional multiple-choice questionnaire, assessing readiness to adopt.
+              </p>
+            </div>
+            <button class="accordion">News<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Provides updates on the shelter's work and activities carried out.
+              </p>
+            </div>
+          </div>
+          <div class="list">
+            <button class="accordion">Articles<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Offers educational/ informative content to guide decisions and responsibilities of pet adoption.
+              </p>
+            </div>
+            <button class="accordion">Training<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Includes step-by-step training content for pet owners to replicate at home.
+              </p>
+            </div>
+            <button class="accordion">How to Help<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Highlights information on sponsorships, partners, volunteers, and donation methods.
+              </p>
+            </div>
+            <button class="accordion">FAQ<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Addresses frequently asked questions to clarify the adoption process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Navigating Through the App</h1>
+        <p>
+          This sitemap prioritizes key solutions and outlines the app's content structure for a user-friendly experience.
+          Following usability testing, I later made adjustments to align it with the changes made to the interface, 
+          as visible in the second sitemap.
+        </p>
+        <div class="sitemap-container" data-aos="zoom-in">
+          <div class="map active">
+            <button class="prev-btn" onclick="prevMap()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="img-container">
+              <img id="flow-light" src="assets/padotar/sitedm1.png" alt="flow">
+              <img style="display: none;" id="flow-dark" src="assets/padotar/sitelm1.png" alt="flow">
+            </div>
+            <button class="next-btn" onclick="nextMap()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="map">
+            <button class="prev-btn" onclick="prevMap()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="img-container">
+              <img id="flow1-light" src="assets/padotar/sitedm.png" alt="flow">
+              <img style="display: none;" id="flow1-dark" src="assets/padotar/sitelm.png" alt="flow">
+            </div>
+            <button class="next-btn" onclick="nextMap()"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="branding" data-title="Branding" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Branding</h2>
+        <h1>Padotar</h1>
+        <p>
+          With the app structure finalized, I turned my attention to its visual identity. How could the app effectively 
+          communicate the brand personality of Padotar?
+        </p>
+        <p>The first step was to select the name of our fictitious shelter. Since it is a shelter for animals looking for 
+          a family and the comfort of a home, I combined the words 'para' (for) and 'adotar' (to adopt). These form the word 
+          'padotar', which, coincidentally, results in a sound effect similar to their hurried pronunciation. I then began 
+          experimenting with the graphic brand and once the brand was defined, I introduced the typography, giving rise to the logo.
+        </p>
+        <p>Padotar's brand image is defined by a symbol depicting a dog and a cat inside a shelter, representing the most 
+          common animals found in these institutions. The main color, orange, was chosen for its contrast with other elements, 
+          conveying the shelter's values of joy, trust, strength, and ambition. The logo features a simple, bold sans-serif font, 
+          chosen to visually balance the design and emphasize the shelter's name.
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="brand-light" src="assets/padotar/brand.png" alt="style guide">
+          <img style="display: none;" id="brand-dark" src="assets/padotar/brand1.png" alt="style guide">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Designing for Consistency</h1>
+        <p>
+          To enhance user experience and maintain design consistency, we're integrating the orange from the logo into other 
+          visual components. Complementing this orange, I chose a pastel shade, an analogous color, aiming to evoke serenity 
+          and comfort. Black text with an RGB value below 100% ensures readability without excessive contrast that might 
+          strain users' eyes during extended use.
+        </p>
+        <p>
+          Prioritizing both simplicity and readability, especially for users with visual impairments, dyslexia, or cognitive 
+          difficulties, I selected two sans-serif fonts. Futura, used previously in the logo, is applied to the titles, 
+          while Avenir Next is used for all other written content. This distinction aids in differentiating headings from 
+          paragraphs.  
+        </p>
+        <div class="img-container styleguide" data-aos="zoom-in">
+          <img id="style-light" src="assets/padotar/styleguide.png" alt="style guide">
+          <img style="display: none;" id="style-dark" src="assets/padotar/styleguide1.png" alt="style guide">
+        </div>
+      </div>
+    </section>
+
+    <section id="prototyping" data-title="Prototype" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Prototype</h2>
+        <h1>Visualizing Concepts</h1>
+        <p>
+          To organize Padotar's app content in line with project goals, I developed a low-fidelity wireframe using basic 
+          geometric shapes and minimal details to emphasize flow and features.
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="lofi" src="assets/padotar/sketches.jpg" alt="sketches">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Paper Prototype</h1>
+        <p>
+          Here, it becomes essential to focus on the interface design to visualize the complete user journey and explore 
+          methods for maximizing the intuitiveness of the pet search and adoption process. This initial exploration allows 
+          us to gain a foundational understanding of how the interface will function as users engage in specific tasks.
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="paper" src="assets/padotar/paperprototype.jpg" alt="paper">
+        </div>
+        <p>
+          To assess the intuitiveness of the flows, I invited two individuals to analyze and provide feedback on a prototype. 
+          Following their insights, I opted to simplify and streamline some of the features:
+        </p>
+        <div class="insights">
+          <div class="list">
+            <button class="accordion">Dark Mode<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                This feature is not a current priority and can be deprioritized for now.
+              </p>
+            </div>
+            <button class="accordion">Homepage Optimization<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Remove redundant options on "What are you looking for?" since they're all available in the menu.
+              </p>
+            </div>
+            <button class="accordion">Quiz Enhancement<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Improve the quiz experience by indicating progress through "Question X of X" for clarity. Avoid asking too many 
+                questions to maintain user engagement.
+              </p>
+            </div>
+            <button class="accordion">Streamlining Adoption Search<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                The adoption section features an extensive page of filters to assist in finding the perfect pet, rendering the 
+                search bar redundant. Users can still choose the "See all" option to view all available pets without specific 
+                filters.
+              </p>
+            </div>
+          </div>
+          <div class="list">
+            <button class="accordion">User Account and Settings<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Consider removing features such as favorites, login, and profile since user accounts would only serve the 
+                purpose of maintaining a favorites list. Additionally, remove app settings as all customizable features have 
+                been eliminated.
+              </p>
+            </div>
+            <button class="accordion">Content Categorization<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                Combine general articles, training, and news into a single tab, introducing a search filter to compile similar 
+                information and reduce menu options.
+              </p>
+            </div>
+            <button class="accordion">Navigation Optimization<i class="fa-solid fa-chevron-down"></i></button>
+            <div class="panel">
+              <p>
+                With the reduction of tabs to about five elements, explore placing the menu at the bottom of the screen for 
+                improved accessibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text" data-aos="fade-right">
+        <h1>Wireframes</h1>
+        <p>
+          I then proceeded to create wireframes in Figma, where an evolution of the interface can already be seen.
+        </p>
+        <div class="img-container" data-aos="zoom-in">
+          <img class="wireframes" src="assets/padotar/wireframes.png" alt="wireframes">
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Hi-fi Interactive Prototype</h1>
+        <p>
+          Finally, we have the high-fidelity digital representation that includes the app's main features 
+          and interactions. This prototype was built on Figma which I would use to help test my design with users.
+        </p>
+        <iframe class="figma" id="figma-light" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5Jab0oVfmS7NVWWjRxdTMO%2FPadotar-Final%3Fnode-id%3D46-384%26starting-point-node-id%3D46%253A384%26t%3DPsfMA7r2fP6sxMQn-1" allowfullscreen></iframe>
+        <iframe class="figma" id="figma-dark" style="display: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAdVW3ibLHNZYBdmdjuLHJO%2FPadotar-Final%3Fnode-id%3D1-2%26starting-point-node-id%3D1%253A2%26t%3D28ARRqDjAxav7DUJ-1" allowfullscreen></iframe>      
+      </div>
+
+      <div class="text test" data-aos="fade-right">
+        <h1>Test Responses</h1>
+        <p>
+          The objective of these tests was to identify usability problems that users may encounter in the interface and 
+          receive feedback with the aim of improving it. Six participants were recruited and all performed the same tasks to 
+          allow comparison.
+        </p>
+        <p>
+          All participants successfully completed all six tasks except for finding the FAQ to clarify an adoption question 
+          (Task 2). Only one participant was able to locate it.
+        </p>
+        <div class="tests-row">
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>6</h2>
+              <p>Participants</p>
+            </div>
+          </div>      
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>6</h2>
+              <p>Tasks</p>
+            </div>
+          </div>         
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>86%</h2>
+              <p>Success</p>
+            </div>
+          </div>         
+          <div class="tests-column">
+            <div class="tests-card">
+              <h2>8.5 / 10</h2>
+              <p>Score</p>
+            </div>
+          </div>
+        </div>  
+        <p>
+          Following the tasks, participants were encouraged to explore the interface freely and provide feedback. 
+          The prototype received an average score of 8.5 out of 10. 
+        </p>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <h1>Priority Revisions</h1>
+        <p>
+          Since it wasn't possible to implement all suggestions, prioritizing the findings became necessary. To achieve this, 
+          I employed the Nielsen Scale to categorize each suggestion. This helped me prioritize the four most 
+          critical issues consistently mentioned by multiple users.
+        </p>
+        <div class="chat">
+          <div class="mine messages">
+            <div class="message last">
+              Is there anything I should improve?
+              </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Increase menu button padding for easier navigation.
+            </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              We should be able to see all adoptable animals initially, without mandatory filters.
+          </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Move FAQ to "About Us" followed by the contact form for further clarification.
+          </div>
+          </div>
+          <div class="yours messages">
+            <div class="message last">
+              Pre-fill adoption form fields like animal type and name for user convenience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="finaldesign" data-title="Final Design" class="container">
+      <div>
+        <div class="text" data-aos="fade-right">
+          <h2><span class="circle"></span>Final Design</h2>
+          <h1>Ready to Find Your Perfect Match?</h1>
+        </div>
+        <div class="phone-gif" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="walk-light" src="assets/padotar/walkthrough1.gif" alt="">
+            <img style="display: none;" class="gif" id="walk-dark" src="assets/padotar/walkthrough.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Walk Me Through the App</h1>
+            <p>
+              A warm, benefit-oriented onboarding process that friendly welcomes first-time users.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif reverse" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="home-light" src="assets/padotar/homequiz1.gif" alt="">
+            <img style="display: none;" class="gif" id="home-dark" src="assets/padotar/homequiz.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>The Tail Wags Here</h1>
+            <p>
+              Is adoption in your future? Take our fun quiz and find out! Plus, get all the latest updates on the shelter's 
+              work and activities.
+            </p>
+          </div>
+        </div>
+        <div class="gif-title" data-aos="zoom-in">
+          <div class="phone-gif">
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="adopt-light" src="assets/padotar/adocoes1.gif" alt="">
+                <img style="display: none;" class="gif" id="adopt-dark" src="assets/padotar/adocoes.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="filter-light" src="assets/padotar/filtro1.gif" alt="">
+                <img style="display: none;" class="gif" id="filter-dark" src="assets/padotar/filtro.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="odin-light" src="assets/padotar/odin1.gif" alt="">
+                <img style="display: none;" class="gif" id="odin-dark" src="assets/padotar/odin.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gif-row-text">
+            <h1>Finding Your Furever Friend</h1>
+            <p>
+              Browse through all our adoptable pets, filter by species, breed, age, and more to find your 
+              ideal furry friend. Once you've found a potential pawfect companion, simply 
+              view their profile and submit an adoption application directly through the app. It's that 
+              easy!
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="donate-light" src="assets/padotar/donativo1.gif" alt="">
+            <img style="display: none;" class="gif" id="donate-dark" src="assets/padotar/donativo.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>Make a Difference</h1>
+            <p>
+              Even if adoption isn't an option, you can still be a hero! Donate vital supplies 
+              for animals in need. Alternatively, donate through MBWay or other digital payment 
+              methods for a seamless experience within the app.
+            </p>
+          </div>
+        </div>
+        <div class="phone-gif reverse" data-aos="zoom-in">
+          <div>
+            <img class="gif" id="faq-light" src="assets/padotar/faq1.gif" alt="">
+            <img style="display: none;" class="gif" id="faq-dark" src="assets/padotar/faq.gif" alt="">
+          </div>
+          <div class="gif-text">
+            <h1>The Heart of Padotar</h1>
+            <p>
+              Discover our story, values, and how we're making a difference in pet lives.
+              Since it was a popular request, the FAQ is now available here, along with other 
+              ways to reach us if your question isn't answered.
+            </p>
+          </div>
+        </div>
+        <div class="gif-title" data-aos="zoom-in">
+          <div class="phone-gif">
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="explore-light" src="assets/padotar/explorar1.gif" alt="">
+                <img style="display: none;" class="gif" id="explore-dark" src="assets/padotar/explorar.gif" alt="">
+              </div>
+            </div>
+            <div class="gif-row">
+              <div>
+                <img class="gif" id="training-light" src="assets/padotar/treino1.gif" alt="">
+                <img style="display: none;" class="gif" id="training-dark" src="assets/padotar/treino.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="gif-row-text">
+            <h1>Your Pet Resource Hub</h1>
+            <p>
+              Dive deeper into pet care with our library of informative articles, stay updated on the latest 
+              news, and discover valuable training tutorials. Whether you're a seasoned pet parent or a new 
+              adopter, we have something for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection" data-title="Conclusion" class="container">
+      <div class="text" data-aos="fade-right">
+        <h2><span class="circle"></span>Conclusion</h2>
+        <div class="reflection">
+          <h1>Reflection & Next Steps</h1>
+          <p>
+            Designed to streamline pet adoption, Padotar offers a promising approach to 
+            enhancing shelter operations and increasing adoption rates. This mobile app offers a streamlined adoption process, 
+            fosters connections between potential adopters and shelters, and empowers users with valuable resources for pet care.
+          </p>
+          <p> In order to prioritize the user experience, an iterative approach was adopted based on the User-Centered Design (UCD) 
+            process, where key usability issues that could hinder user adoption were identified early on. This method, 
+            I believe, was highly effective in ensuring that the overall layout of content is effective and functional. 
+            If you're interested in analyzing the details of the design process, access this <a class="tese" href="https://run.unl.pt/handle/10362/167613" 
+            target="_blank">link</a> for my thesis.
+          </p>
+        </div>  
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <div class="went-nice">
+          <h1>So, What Went Well?</h1>
+          <div class="positive">
+            <ul>
+              <li>
+                <h2>Design With, Not For 🐣</h2>
+                <p>
+                  Actively involve the users through out the process to create a shared sense of ownership and to 
+                  eliminate my personal biases.
+                </p>
+              <li>
+                <h2>Positive User Impression 👍</h2>
+                <p>
+                  Users praised the app's interactivity, intuitiveness, clarity, and 
+                  inclusion of engaging articles and training resources, highlighting its potential for continued use 
+                  beyond adoption.
+                </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text" data-aos="fade-right">
+        <div class="future">
+          <h1>That's Nice, But What Needs Improvement?</h1>
+          <div class="improve">
+            <ul>
+              <li>
+                <h2>Research & User Insights 🔎</h2>
+                <p>
+                  With revisions complete, conduct user testing to validate the changes and identify any 
+                  further priorities for improvement.
+                </p>
+              </li>
+              <li>
+                <h2>Unlocking New Possibilities 🔓</h2>
+                <p>
+                  Future iterations could include an interactive pet hotel map and a solidarity store to benefit 
+                  both pet owners and the shelter.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="improve">
+            <ul>
+              <li>
+                <h2>Improved Readability 📖</h2>
+                <p>
+                  Optimizing the content density on some pages by summarizing key points and 
+                  highlighting key words could improve user comprehension and reduce cognitive load while browsing 
+                  the app.
+                </p>
+              </li>
+              <li>
+                <h2>National Database 🚀</h2>
+                <p>
+                  This project is a promising beginning for future animal welfare initiatives. Implementing a nationwide 
+                  database, as suggested in interviews, could greatly enhance adoption opportunities and animal mobility 
+                  nationwide.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="container2" class="container2" data-aos="fade-right">
+      <h1>You've Reached the End! Explore My Other Projects:</h1>
+      <div class="next" data-aos="fade-right">
+        <a class="button project" href="inclue.html">Next Project - Inclue<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const continueButton = document.getElementById('continueButton');
+        const popup = document.getElementById('mobilePopup');
+
+        continueButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+      });
+    </script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const mobileMenu = document.querySelector("button.mobile-menu-button");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          document.body.classList.add("fixed-position");
+        } else {
+          document.body.classList.remove("fixed-position");
+        }
+      });
+    </script>
+
+    <script>
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 1315 ||
+          document.documentElement.scrollTop > 1315
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script>
+      document.addEventListener("scroll", function () {
+      const research= document.getElementById("research");
+      const nav1 = document.querySelector(".nav1");
+      const lastSectionId = "container2";
+      const lastSection = document.getElementById(lastSectionId);
+      const researchOffsetTop = research.offsetTop - 100;
+
+      if (window.scrollY >= researchOffsetTop && window.scrollY < lastSection.offsetTop) {
+        nav1.classList.add("visible");
+        } else {
+          nav1.classList.remove("visible");
+        }
+      });
+    </script>
+
+    <script>
+      const navLinks = document.querySelectorAll(".nav1 ul li a");
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          const offset = 50;
+
+          const scrollTo = targetElement.offsetTop - offset;
+          window.scrollTo({
+            top: scrollTo,
+            behavior: "smooth",
+          });
+
+          navLinks.forEach((link) => link.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        let fromTop = window.scrollY + 100;
+
+        navLinks.forEach((link) => {
+          const section = document.querySelector(link.hash);
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const dropdownButton = document.querySelector(".dropdown-button");
+      const navList = document.querySelector(".nav-list");
+      const activeSection = document.querySelector(".active-section");
+
+      dropdownButton.addEventListener("click", function () {
+        navList.classList.toggle("show-dropdown");
+      });
+
+      document.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        let currentSection = sections[0];
+
+        sections.forEach((section) => {
+          if (window.scrollY >= section.offsetTop - 100) {
+            currentSection = section;
+          }
+        });
+
+        activeSection.textContent = currentSection.getAttribute("data-title");
+      });
+
+      navList.addEventListener("click", function () {
+        navList.classList.remove("show-dropdown");
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mobileMenuButton = document.querySelector('.mobile-menu-button');
+        var overlay = document.createElement('div');
+        overlay.className = 'overlay';
+      
+        mobileMenuButton.addEventListener('click', function () {
+          document.body.appendChild(overlay);
+      
+          overlay.classList.toggle('active');
+          mobileMenuButton.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <script>
+      const lightModeToggle = document.getElementById('light-mode-toggle');
+      const body = document.body;
+
+      function toggleLightMode() {
+          body.classList.toggle('light-mode');
+
+          const isLightMode = body.classList.contains('light-mode');
+          localStorage.setItem('lightMode', isLightMode);
+
+          const logoLight = document.getElementById('logo-light');
+          const logoDark = document.getElementById('logo-dark');
+          if (isLightMode) {
+              logoLight.style.display = 'none';
+              logoDark.style.display = 'block';
+          } else {
+              logoLight.style.display = 'block';
+              logoDark.style.display = 'none';
+          }
+
+          const figmaLight = document.getElementById('figma-light');
+          const figmaDark = document.getElementById('figma-dark');
+          if (isLightMode) {
+              figmaLight.style.display = 'none';
+              figmaDark.style.display = 'block';
+          } else {
+              figmaLight.style.display = 'block';
+              figmaDark.style.display = 'none';
+          }
+
+          const flowLight = document.getElementById('flow-light');
+          const flowDark = document.getElementById('flow-dark');
+          if (isLightMode) {
+              flowLight.style.display = 'none';
+              flowDark.style.display = 'block';
+          } else {
+              flowLight.style.display = 'block';
+              flowDark.style.display = 'none';
+          }
+
+          const flow1Light = document.getElementById('flow1-light');
+          const flow1Dark = document.getElementById('flow1-dark');
+          if (isLightMode) {
+              flow1Light.style.display = 'none';
+              flow1Dark.style.display = 'block';
+          } else {
+              flow1Light.style.display = 'block';
+              flow1Dark.style.display = 'none';
+          }
+
+          const brandLight = document.getElementById('brand-light');
+          const brandDark = document.getElementById('brand-dark');
+          if (isLightMode) {
+            brandLight.style.display = 'none';
+            brandDark.style.display = 'block';
+          } else {
+            brandLight.style.display = 'block';
+            brandDark.style.display = 'none';
+          }
+
+          const styleLight = document.getElementById('style-light');
+          const styleDark = document.getElementById('style-dark');
+          if (isLightMode) {
+            styleLight.style.display = 'none';
+            styleDark.style.display = 'block';
+          } else {
+            styleLight.style.display = 'block';
+            styleDark.style.display = 'none';
+          }
+
+          const walkLight = document.getElementById('walk-light');
+          const walkDark = document.getElementById('walk-dark');
+          if (isLightMode) {
+            walkLight.style.display = 'none';
+            walkDark.style.display = 'block';
+          } else {
+            walkLight.style.display = 'block';
+            walkDark.style.display = 'none';
+          }
+
+          const homeLight = document.getElementById('home-light');
+          const homeDark = document.getElementById('home-dark');
+          if (isLightMode) {
+            homeLight.style.display = 'none';
+            homeDark.style.display = 'block';
+          } else {
+            homeLight.style.display = 'block';
+            homeDark.style.display = 'none';
+          }
+
+          const adoptLight = document.getElementById('adopt-light');
+          const adoptDark = document.getElementById('adopt-dark');
+          if (isLightMode) {
+            adoptLight.style.display = 'none';
+            adoptDark.style.display = 'block';
+          } else {
+            adoptLight.style.display = 'block';
+            adoptDark.style.display = 'none';
+          }
+
+          const filterLight = document.getElementById('filter-light');
+          const filterDark = document.getElementById('filter-dark');
+          if (isLightMode) {
+            filterLight.style.display = 'none';
+            filterDark.style.display = 'block';
+          } else {
+            filterLight.style.display = 'block';
+            filterDark.style.display = 'none';
+          }
+
+          const odinLight = document.getElementById('odin-light');
+          const odinDark = document.getElementById('odin-dark');
+          if (isLightMode) {
+            odinLight.style.display = 'none';
+            odinDark.style.display = 'block';
+          } else {
+            odinLight.style.display = 'block';
+            odinDark.style.display = 'none';
+          }
+
+          const donateLight = document.getElementById('donate-light');
+          const donateDark = document.getElementById('donate-dark');
+          if (isLightMode) {
+            donateLight.style.display = 'none';
+            donateDark.style.display = 'block';
+          } else {
+            donateLight.style.display = 'block';
+            donateDark.style.display = 'none';
+          }
+
+          const faqLight = document.getElementById('faq-light');
+          const faqDark = document.getElementById('faq-dark');
+          if (isLightMode) {
+            faqLight.style.display = 'none';
+            faqDark.style.display = 'block';
+          } else {
+            faqLight.style.display = 'block';
+            faqDark.style.display = 'none';
+          }
+
+          const exploreLight = document.getElementById('explore-light');
+          const exploreDark = document.getElementById('explore-dark');
+          if (isLightMode) {
+            exploreLight.style.display = 'none';
+            exploreDark.style.display = 'block';
+          } else {
+            exploreLight.style.display = 'block';
+            exploreDark.style.display = 'none';
+          }
+
+          const trainingLight = document.getElementById('training-light');
+          const trainingDark = document.getElementById('training-dark');
+          if (isLightMode) {
+            trainingLight.style.display = 'none';
+            trainingDark.style.display = 'block';
+          } else {
+            trainingLight.style.display = 'block';
+            trainingDark.style.display = 'none';
+          }
+
+      }
+
+      lightModeToggle.addEventListener('click', toggleLightMode);
+
+      const isLightMode = localStorage.getItem('lightMode') === 'true';
+
+      if (isLightMode) {
+          body.classList.add('light-mode');
+
+          document.getElementById('logo-light').style.display = 'none';
+          document.getElementById('logo-dark').style.display = 'block';
+
+          document.getElementById('figma-light').style.display = 'none';
+          document.getElementById('figma-dark').style.display = 'block';
+
+          document.getElementById('flow-light').style.display = 'none';
+          document.getElementById('flow-dark').style.display = 'block';
+
+          document.getElementById('flow1-light').style.display = 'none';
+          document.getElementById('flow1-dark').style.display = 'block';
+
+          document.getElementById('brand-light').style.display = 'none';
+          document.getElementById('brand-dark').style.display = 'block';
+
+          document.getElementById('style-light').style.display = 'none';
+          document.getElementById('style-dark').style.display = 'block';
+
+          document.getElementById('walk-light').style.display = 'none';
+          document.getElementById('walk-dark').style.display = 'block';
+
+          document.getElementById('home-light').style.display = 'none';
+          document.getElementById('home-dark').style.display = 'block';
+
+          document.getElementById('adopt-light').style.display = 'none';
+          document.getElementById('adopt-dark').style.display = 'block';
+
+          document.getElementById('filter-light').style.display = 'none';
+          document.getElementById('filter-dark').style.display = 'block';
+
+          document.getElementById('odin-light').style.display = 'none';
+          document.getElementById('odin-dark').style.display = 'block';
+
+          document.getElementById('donate-light').style.display = 'none';
+          document.getElementById('donate-dark').style.display = 'block';
+
+          document.getElementById('faq-light').style.display = 'none';
+          document.getElementById('faq-dark').style.display = 'block';
+
+          document.getElementById('explore-light').style.display = 'none';
+          document.getElementById('explore-dark').style.display = 'block';
+
+          document.getElementById('training-light').style.display = 'none';
+          document.getElementById('training-dark').style.display = 'block';
+
+      }
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("ac-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      let currentPersona = 0;
+      const personas = document.querySelectorAll('.persona-card');
+
+      function showPersona(index) {
+          personas.forEach((persona) => {
+              persona.classList.remove('active');
+          });
+          personas[index].classList.add('active');
+      }
+
+      function prevPersona() {
+          currentPersona = (currentPersona - 1 + personas.length) % personas.length;
+          showPersona(currentPersona);
+      }
+
+      function nextPersona() {
+          currentPersona = (currentPersona + 1) % personas.length;
+          showPersona(currentPersona);
+      }
+
+      showPersona(currentPersona);
+    </script>
+
+    <script>
+      let currentExample = 0;
+      const examples = document.querySelectorAll('.example-card');
+
+      function showExample(index) {
+      examples.forEach((example) => {
+          example.classList.remove('active');
+      });
+      examples[index].classList.add('active');
+      }
+
+      function prevExample() {
+      currentExample = (currentExample - 1 + examples.length) % examples.length;
+      showExample(currentExample);
+      }
+
+      function nextExample() {
+      currentExample = (currentExample + 1) % examples.length;
+      showExample(currentExample);
+      }
+
+      showExample(currentExample);
+    </script>
+
+    <script>
+      let currentMap = 0;
+      const maps = document.querySelectorAll('.map');
+
+      function showMap(index) {
+      maps.forEach((map) => {
+          map.classList.remove('active');
+      });
+      maps[index].classList.add('active');
+      }
+
+      function prevMap() {
+      currentMap = (currentMap - 1 + maps.length) % maps.length;
+      showMap(currentMap);
+      }
+
+      function nextMap() {
+      currentMap = (currentMap + 1) % maps.length;
+      showMap(currentMap);
+      }
+
+      showMap(currentMap);
+    </script>
+
+  </body>
+</html>

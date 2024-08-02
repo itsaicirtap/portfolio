@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About • Patrícia Marques</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="popup" id="mobilePopup">
+      <div class="popup-content">
+        <p>For the best experience, visit me on a larger screen ✨</p>
+        <button id="continueButton" class="button">Continue on Mobile<i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img class="navbar-brand cursor" id="logo-light" src="assets/logo1.png" alt="logo">
+          <img class="navbar-brand cursor" style="display: none;" id="logo-dark" src="assets/logo.png" alt="logo">
+        </a>   
+        <nav id="mbmenu" class="nav">
+          <ul>
+            <li><a href="index.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Home<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a class="active" href="about.html"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>About<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/patpm" target="_blank"><i class="mb-display fa-solid fa-arrow-right" style="display: none;"></i>Linkedin<i class="mbmenu fa-solid fa-arrow-right"></i></a></li>
+            <button id="light-mode-toggle" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          </ul>
+        </nav>
+      </div>
+      <button class="mobile-menu-button" title="Mobile menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <div id="about" class="container">
+      <div class="profile">
+        <img class="picture" src="assets/me.jpg" alt="Profile picture" data-aos="fade-left">
+        <div class="text" data-aos="fade-right">
+          <h1>About Me</h1>
+          <p>
+            I'm Patrícia, an aspiring UI/UX Designer motivated by a passion for creative
+            expression and a solid foundation in design principles. Recently 
+            graduated with a Master's in New Media and Web Practices, I'm eager 
+            to contribute innovative ideas, apply and enhance my previously 
+            acquired knowledge in a professional environment.
+          </p>
+          <p class="margin-bottom">
+            I've always had a special enthusiasm for photography and visual design. 
+            While it started as a hobby for pure enjoyment, my interest deepened 
+            as I acquired tools and expanded my knowledge at both technical and theoretical levels.
+          </p>
+          <a href="https://www.linkedin.com/in/patpm" class="button" target="_blank">Let's Connect!<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="situation" data-aos="fade-right">
+        <h1>What's Next?</h1>
+        <div class="currently">
+          <p class="bold">
+            Currently
+          </p>
+          <p>
+            Seeking a UI/UX or Product Design new grad role in Lisbon, 
+            Portugal. Contact me to discuss how I can add value to your team!
+          </p>
+        </div>
+        <hr>
+        <div class="previously">
+          <p class="bold">
+            Previously
+          </p>
+          <p>
+            Graduated with a Master's in New Media and Web Practices from  NOVA 
+            University of Lisbon - School of Social Sciences and Humanities (NOVA FCSH).
+          </p>
+        </div>
+      </div>
+
+      <div class="moreabout" data-aos="fade-right">
+        <h1>Beyond the Pixels I'm a...</h1>
+        <div class="curiosity">
+          <ul>
+            <li>
+              <h2>Food Enthusiast 🍕</h2>
+              <p>
+                Italian cuisine, with its rich flavors and comforting pasta dishes, has a special place in my heart. 
+                But I also can't resist some tasty picanha.
+              </p>
+            </li>
+            <li>
+              <h2>Dog Lover 🐕</h2>
+              <p>
+                I'm an unabashed dog enthusiast, with a soft spot for Corgis! These adorable, short-legged companions 
+                bring endless joy into my life.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="curiosity">
+          <ul>
+          <li>
+            <h2>Crafty Trainer 🎮</h2>
+            <p>
+              In my downtime, I'm most likely playing games with my friends. Just as I find immense joy in being a 
+              Minecraft architect, empowering my imagination, I also enjoy exploring the real world while capturing some Pokémon.
+            </p>
+          </li>
+          <li>
+            <h2>Coin Collector 📁</h2>
+            <p>
+              Fascinated by numismatics, I see coin collecting as a journey through history, culture, and art. I enjoy 
+              researching and discovering unique currencies from around the world.
+            </p>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Patrícia Marques. All rights reserved.</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const continueButton = document.getElementById('continueButton');
+        const popup = document.getElementById('mobilePopup');
+      
+        continueButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+      });
+    </script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      const mobileMenu = document.querySelector("button.mobile-menu-button");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          document.body.classList.add("fixed-position");
+        } else {
+          document.body.classList.remove("fixed-position");
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var mobileMenuButton = document.querySelector('.mobile-menu-button');
+        var overlay = document.createElement('div');
+        overlay.className = 'overlay';
+      
+        mobileMenuButton.addEventListener('click', function () {
+          document.body.appendChild(overlay);
+      
+          overlay.classList.toggle('active');
+          mobileMenuButton.classList.toggle('active');
+        });
+      });
+    </script>
+
+    <script>
+      const lightModeToggle = document.getElementById('light-mode-toggle');
+      const body = document.body;
+
+      function toggleLightMode() {
+          body.classList.toggle('light-mode');
+
+          const isLightMode = body.classList.contains('light-mode');
+          localStorage.setItem('lightMode', isLightMode);
+
+          const logoLight = document.getElementById('logo-light');
+          const logoDark = document.getElementById('logo-dark');
+          if (isLightMode) {
+              logoLight.style.display = 'none';
+              logoDark.style.display = 'block';
+          } else {
+              logoLight.style.display = 'block';
+              logoDark.style.display = 'none';
+          }
+      }
+
+      lightModeToggle.addEventListener('click', toggleLightMode);
+
+      const isLightMode = localStorage.getItem('lightMode') === 'true';
+
+      if (isLightMode) {
+          body.classList.add('light-mode');
+          document.getElementById('logo-light').style.display = 'none';
+          document.getElementById('logo-dark').style.display = 'block';
+      }
+    </script>
+
+  </body>
+</html>
